@@ -1,2 +1,40 @@
-
-/*# sourceMappingURL=style_web.css.map *//*# sourceMappingURL=style_web.css.map */
+#connexion {
+  margin-top: 10%;
+}
+#connexion .card {
+  border-radius: 25px;
+  box-shadow: 1px 1px 50px rgba(29, 29, 28, 0.152);
+  height: 500px;
+}
+#connexion .card .card-header {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.885);
+  border-bottom: none;
+}
+#connexion .card .card-header .title {
+  color: #d70a20;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 25px;
+}
+#connexion .card .card-header img {
+  width: 70px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+#connexion .card .card-body form {
+  margin-top: 25px;
+}
+#connexion .card .card-body form .form-group input {
+  margin-top: 10px;
+}
+#connexion .card .card-body form .form-group .pwd {
+  position: relative;
+}
+#connexion .card .card-body form .form-group .pwd i {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}/*# sourceMappingURL=style_web.css.map */
