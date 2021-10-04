@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap 4 & Fontawesome-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="./assets/css/style_web.css">
+
+   <!--Javascript-->
+
+    <title>Detail de la commande</title>
+</head>
+<body>
+    <main>
+        <section id="dashboard_home">
+                <div class="container">
+                    <div class="row">
+<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  left   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+                        <div class="col-md-2" id="_left">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <img src="assets/images/touchpoint-mobile-livreur.png" alt="logo livreur"/>
+                                        </div>
+                                        <div class="card-footer">
+                                            <h1 class="title">Open Livreur </h1>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <nav>
+                                    <ul class="nav">
+                                        <li class="nav-item active">
+                                            <a href="./dashoard.html" class="nav-link "> 
+                                                <!--Icon home-->
+                                                <i class="bi bi-house-fill"></i>
+                                                Acceuil 
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link active">
+                                                <!--Icon commande-->
+                                                <i class="bi bi-person"></i>
+                                                Mes commandes 
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <!--Icon historique-->
+                                                <i class="bi bi-clock-history"></i>
+                                                Historique de livraison
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <!--Calendra-->
+                                                <i class="bi bi-calendar-day"></i>
+                                                Calendrier 
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <!--Icon compte-->
+                                                <i class="bi bi-person-circle"></i>
+                                                Mon compte 
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <!--Icon settings-->
+                                                <i class="bi bi-box-arrow-left"></i>
+                                                Mon compte 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  center   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+                        
+                        <div class="col-md-8" id="center">
+                            <h3 class="gretting">Welcome Back !</h3>
+                            <h1 class="name">Stéphane</h1>
+
+                            <!--Detail de la commande-->
+                            <div class="row" id="detail_de_la_commande">
+                                <div class="col-12 _detail">
+                                    <p class="mt-4">Commande n°: <span>1155466DDE1</span></p>
+                                    <hr/>
+                                    <h3 class="title"> DETAILS SUR LE CLIENT</h3>
+                                    <p class="_name">Nom du client: <strong>Chavez</strong></p>
+                                    <p class="prenom">Prénom du client: <strong>Amanda</strong></p>
+                                    <p class="contact">Contact: <strong>0023658974</strong></p>
+                                    <p class="adresse">Adresse du client: <br/></p>
+                                    <p><i class="bi bi-geo-alt-fill"></i> Carrefour Agontinkon, <br/> Cotonou, Benin</p>
+                                </div>
+                            </div>
+
+                            <div class="row" >
+                                <div class="col-12">
+                                    <img src="assets/images/Rectangle 487.png" class="img-fluid" alt=""/>
+                                </div>
+                            </div>
+
+                            <div class="row" id="detail_de_la_commande_2">
+                                <h3 class="title"> DETAILS SUR LA COMMANDE</h3>
+                                <table class="table">
+                                    <thead class="thead-light">
+                                        <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Produit</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Quantité</th>
+                                        <th scope="col">Prix</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                                <td>432</td>
+                                            <td>2500CFA</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Atchè plus Aloko</td>
+                                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                            <td>432</td>
+                                            <td>1000FCFA</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Riz au poisson Braisé</td>
+                                            <td>tLorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                                <td>432</td>
+                                            <td>250FCFA</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="row" id="detail_de_la_commande_3">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4 col-sm-6 col-8">
+                                    <p class="summary">Total du payement</p>
+                                    <div class="total"><strong>8500FCFA</strong></div>
+                                </div>
+                            </div>
+                            <div class="row" id="detail_de_la_commande_4">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4 col-sm-6 col-8 _btn">
+                                    
+                                    <button class="btn btn-outline-success"><a href="#" class="">Accepter <i class="bi bi-x"></i></a></button>
+                                    <button class="btn btn-outline-danger"><a href="#">Refuser <i class="bi bi-x"></i></a></button>
+                                                                                        
+                                 
+                                </div>
+                            </div>
+
+                        </div>
+
+                        
+
+<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  right   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+                        <div class="col-md-2 " id="_right">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <img src="assets/images/Groupe de masques 468.png" alt="Avatar du livreur"/>
+                                        <div class="card-body">
+                                            <p class="desc_red">Bonjour</p>
+                                            <h1 class="title">Stéphane !</h1>
+                                            <p class="desc">Modifier mon profil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <img src="assets/images/Composant 10 – 1.png" alt="Bagbe de filicitation"/>
+                                </div>
+                            </div>
+
+                            <div class="row _notification">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <p class="col-md-7 desc_1">Notifications</p>
+                                        <p class="col-md-5 desc_2">Tous voir</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <p class="desc">Vous avez une nouvelle commande <br/> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>  </p>
+                                        <p class="_icon">
+                                            <!--Icon exclamation-->
+                                            <i class="bi bi-exclamation-lg"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <p class="desc">Vous avez un nouveau message de open marcket <br/> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>  </p>
+                                        <p class="_icon">
+                                            <i class="bi bi-envelope-fill"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <p class="desc">Vous n'avez pas encore terminé la confiration  <br/> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>  </p>
+                                        <p class="_icon">
+                                            <!--Icon exclamation-->
+                                            <i class="bi bi-exclamation-lg"></i>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+</body>
+</html>

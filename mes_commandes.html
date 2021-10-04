@@ -1,23 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <!--Bootstrap 4 & Fontawesome-->
-
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
     <link rel="stylesheet" href="./assets/css/style_web.css">
 
    <!--Javascript-->
-  
-    <title>Dashboard</title>
+   
+    <title>Mes commandes</title>
 </head>
 <body>
-    
     <main>
         <section id="dashboard_home">
                 <div class="container">
@@ -39,14 +36,14 @@
                                 <nav>
                                     <ul class="nav">
                                         <li class="nav-item active">
-                                            <a href="#" class="nav-link active"> 
+                                            <a href="./dashoard.html" class="nav-link"> 
                                                 <!--Icon home-->
                                                 <i class="bi bi-house-fill"></i>
                                                 Acceuil 
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="./mes_commandes.html" class="nav-link">
+                                            <a href="" class="nav-link active">
                                                 <!--Icon commande-->
                                                 <i class="bi bi-person"></i>
                                                 Mes commandes 
@@ -92,41 +89,14 @@
                             <h1 class="name">Stéphane</h1>
                             <h1 class="title">Tableau de bord</h1>
 
-                            <!--#############   Récapitulatif   #############-->
-                            <div class="row" id="recap_row">
-                                <h3 class="summary col-12" id="recap">Récapitulatif</h3>
-                                <div class="col-md-4">
-                                    <div class="card ">
-                                        <!--Enburger-->
-                                        <img src="assets/images/Groupe_de_masques_7-removebg-preview.png" alt=""/>
-                                        <div class="card-body">
-                                            <p class="desc">Total de commande <br/> acceptée <br/> <span>145</span> </p>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card ">
-                                        <!--Packet-->
-                                        <img src="assets/images/Groupe_13-removebg-preview.png" alt=""/>
-                                        <div class="card-body">
-                                            <p class="desc">Total de commande <br/> livré <br/> <span>145</span> </p>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card">
-                                        <!--Etoil-->
-                                        <img src="assets/images/Groupe_de_masques_8-removebg-preview.png" alt=""/>
-                                        <div class="card-body">
-                                            <p class="desc">Indicateur de <br/> performance <br/> <span class="principal">7</span> <span class="bas">-10</span> <span class="haut"><img src="open_livreur/static/images/increase-removebg-preview.png" alt=""/></span> </p>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
+                            <!--#############   Bouton de recherche   #############-->
+                        <div class="input-group mb-3 _form">
+                            <input type="text" class="form-control" placeholder="Rechercher une commande" aria-label="Recipient's username" aria-describedby="button-addon2"/>
+                            <div class="input-group-append ml-2">
+                                <button class="btn btn-outline-secondary"  type="button" id="button-addon2">RECHERCHE</button>
                             </div>
-
+                        </div>
+                            
 
                             <!--#############   Commandes Disponibles   #############-->
                             <div class="row" id="commande_dispo_row">
@@ -341,75 +311,6 @@
                                     </div> 
                                 </div>
 
-                                <div class="col-md-4 my-2">
-                                    <div class="card ">
-                                        <div class="card-header">
-                                            <h3 class="title">Amanda Chavez</h3>
-                                            <p class="desc_red"><a href="./detail_commande.html">Details</a></p>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="_body_1">
-                                                <i class="bi bi-geo-alt-fill"></i>
-                                                <p class="lieu">Akpakpa sènandé von en face du supermarché</p>
-                                            </div>
-                                            <div class="_body_2">
-                                                <p class="time"><span>Date</span> <br/> 25 Avril 2021 </p>
-                                                <p class="time"><span>Time</span> <br/> 10:30</p>
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <p class="_left"> <a href="#">Accepter</a> </p>
-                                            <p class="_right"><a href="">Refuser</a></p>
-                                        </div>
-                                    </div> 
-                                </div>
-
-                                <div class="col-md-4 my-2">
-                                    <div class="card ">
-                                        <div class="card-header">
-                                            <h3 class="title">Amanda Chavez</h3>
-                                            <p class="desc_red"><a href="./detail_commande.html">Details</a></p>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="_body_1">
-                                                <i class="bi bi-geo-alt-fill"></i>
-                                                <p class="lieu">Akpakpa sènandé von en face du supermarché</p>
-                                            </div>
-                                            <div class="_body_2">
-                                                <p class="time"><span>Date</span> <br/> 25 Avril 2021 </p>
-                                                <p class="time"><span>Time</span> <br/> 10:30</p>
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <p class="_left"> <a href="#">Accepter</a> </p>
-                                            <p class="_right"><a href="">Refuser</a></p>
-                                        </div>
-                                    </div> 
-                                </div>
-
-                                <div class="col-md-4 my-2">
-                                    <div class="card ">
-                                        <div class="card-header">
-                                            <h3 class="title">Amanda Chavez</h3>
-                                            <p class="desc_red"><a href="./detail_commande.html">Details</a></p>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="_body_1">
-                                                <i class="bi bi-geo-alt-fill"></i>
-                                                <p class="lieu">Akpakpa sènandé von en face du supermarché</p>
-                                            </div>
-                                            <div class="_body_2">
-                                                <p class="time"><span>Date</span> <br/> 25 Avril 2021 </p>
-                                                <p class="time"><span>Time</span> <br/> 10:30</p>
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <p class="_left"> <a href="#">Accepter</a> </p>
-                                            <p class="_right"><a href="">Refuser</a></p>
-                                        </div>
-                                    </div> 
-                                </div>
-
 
                                 <div class="col-md-4 my-2">
                                     <div class="card ">
@@ -480,7 +381,77 @@
                                     </div> 
                                 </div>
 
-                               
+                                <div class="col-md-4 my-2">
+                                    <div class="card ">
+                                        <div class="card-header">
+                                            <h3 class="title">Amanda Chavez</h3>
+                                            <p class="desc_red"><a href="./detail_commande.html">Details</a></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="_body_1">
+                                                <i class="bi bi-geo-alt-fill"></i>
+                                                <p class="lieu">Akpakpa sènandé von en face du supermarché</p>
+                                            </div>
+                                            <div class="_body_2">
+                                                <p class="time"><span>Date</span> <br/> 25 Avril 2021 </p>
+                                                <p class="time"><span>Time</span> <br/> 10:30</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="_left"> <a href="#">Accepter</a> </p>
+                                            <p class="_right"><a href="">Refuser</a></p>
+                                        </div>
+                                    </div> 
+                                </div>
+
+                                <div class="col-md-4 my-2">
+                                    <div class="card ">
+                                        <div class="card-header">
+                                            <h3 class="title">Amanda Chavez</h3>
+                                            <p class="desc_red"><a href="./detail_commande.html">Details</a></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="_body_1">
+                                                <i class="bi bi-geo-alt-fill"></i>
+                                                <p class="lieu">Akpakpa sènandé von en face du supermarché</p>
+                                            </div>
+                                            <div class="_body_2">
+                                                <p class="time"><span>Date</span> <br/> 25 Avril 2021 </p>
+                                                <p class="time"><span>Time</span> <br/> 10:30</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="_left"> <a href="#">Accepter</a> </p>
+                                            <p class="_right"><a href="">Refuser</a></p>
+                                        </div>
+                                    </div> 
+                                </div>
+
+                                <div class="col-md-4 my-2">
+                                    <div class="card ">
+                                        <div class="card-header">
+                                            <h3 class="title">Amanda Chavez</h3>
+                                            <p class="desc_red"><a href="./detail_commande.html">Details</a></p>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="_body_1">
+                                                <i class="bi bi-geo-alt-fill"></i>
+                                                <p class="lieu">Akpakpa sènandé von en face du supermarché</p>
+                                            </div>
+                                            <div class="_body_2">
+                                                <p class="time"><span>Date</span> <br/> 25 Avril 2021 </p>
+                                                <p class="time"><span>Time</span> <br/> 10:30</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="_left"> <a href="#">Accepter</a> </p>
+                                            <p class="_right"><a href="">Refuser</a></p>
+                                        </div>
+                                    </div> 
+                                </div>
+                                
+
+                                
                             </div>
                         </div>
 
@@ -530,8 +501,8 @@
                                     <div class="card">
                                         <p class="desc">Vous n'avez pas encore terminé la confiration  <br/> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>  </p>
                                         <p class="_icon">
-                                             <!--Icon exclamation-->
-                                             <i class="bi bi-exclamation-lg"></i>
+                                            <!--Icon exclamation-->
+                                            <i class="bi bi-exclamation-lg"></i>
                                         </p>
                                     </div>
                                 </div>
@@ -543,7 +514,5 @@
                 </div>
             </section>
         </main>
-    
-
 </body>
 </html>
