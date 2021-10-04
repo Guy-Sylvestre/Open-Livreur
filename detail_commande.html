@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="./assets/css/style_web.css">
 
    <!--Javascript-->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Detail de la commande</title>
 </head>
 <body>
@@ -154,14 +156,36 @@
                                 </div>
                             </div>
                             <div class="row" id="detail_de_la_commande_4">
-                                <div class="col-md-4"></div>
-                                <div class="col-md-4"></div>
-                                <div class="col-md-4 col-sm-6 col-8 _btn">
+                                
+                                <div class="col-md-12 col-sm-12 col-12 _btn">
                                     
-                                    <button class="btn btn-outline-success"><a href="#" class="">Accepter <i class="bi bi-x"></i></a></button>
-                                    <button class="btn btn-outline-danger"><a href="#">Refuser <i class="bi bi-x"></i></a></button>
-                                                                                        
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">
+                                        <a href="#">Accepter <i class="bi bi-x"></i></a>
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
                                  
+                                    <button class="btn btn-outline-danger"><a href="#" class="">Refuser <i class="bi bi-x"></i></a></button>
                                 </div>
                             </div>
 

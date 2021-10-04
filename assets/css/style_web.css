@@ -439,6 +439,8 @@
   color: #d70a20;
 }
 #dashboard_home .container .row #center #detail_de_la_commande_4 ._btn {
+  display: flex;
+  justify-content: end;
   margin-top: 20px;
   margin-bottom: 50px;
 }

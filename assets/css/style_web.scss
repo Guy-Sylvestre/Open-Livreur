@@ -494,7 +494,10 @@
                         }
                 }
                 #detail_de_la_commande_4{
+                  
                     ._btn{
+                        display: flex;
+                        justify-content: end;
                         margin-top: 20px;
                         margin-bottom: 50px;
                         .btn-outline-success{
