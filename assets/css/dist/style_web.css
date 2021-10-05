@@ -50,20 +50,20 @@
 #connexion .card .card-body form .form-group .pwd a {
   color: black;
 }
-#connexion .card .card-body form .form-group .pwd a .fa-eye {
+#connexion .card .card-body form .form-group .pwd a .bi-eye {
   position: absolute;
   top: 20px;
   right: 20px;
   color: #89959f;
 }
-#connexion .card .card-body form .form-group .pwd a .fa-eye-slash {
+#connexion .card .card-body form .form-group .pwd a .bi-eye-slash {
   opacity: 0;
   position: absolute;
   top: 20px;
   right: 20px;
   color: #89959f;
 }
-#connexion .card .card-body form .form-group .pwd a .fa-eye-slash:hover {
+#connexion .card .card-body form .form-group .pwd a .bi-eye-slash:hover {
   opacity: 100;
 }
 #connexion .card .card-body form p a {
@@ -271,9 +271,23 @@
   padding-left: 0px;
 }
 #dashboard_home .container .row {
+  position: relative;
   /*---------------   left    -------------- */
   /*---------------   center    -------------- */
   /*---------------   right    -------------- */
+}
+@media (min-width: 320px) and (max-width: 420px) {
+  #dashboard_home .container .row #_left {
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    z-index: 33;
+    border: 2px solid red;
+    height: 400px;
+    width: 75%;
+    background: #f35162;
+    display: none;
+  }
 }
 #dashboard_home .container .row #_left {
   position: relative;
@@ -329,7 +343,7 @@
   font-size: 14px;
 }
 #dashboard_home .container .row #_left .row nav .nav .nav-item .nav-link i {
-  margin-right: 2px;
+  margin-right: 1px;
 }
 #dashboard_home .container .row #_left .row nav .nav .nav-item .nav-link:hover {
   color: #d70a20;
@@ -342,6 +356,8 @@
   padding-right: 15px;
   background: #f7f8fa;
   /*#############   Récapitulatif   #############*/
+  /*#############   Bouton de recherche   #############*/
+  /*#############   Detail de la commande   #############*/
   /*#############   Commandes Disponibles   #############*/
 }
 #dashboard_home .container .row #center .gretting {
@@ -412,6 +428,56 @@
   top: 60px;
   left: 55px;
 }
+#dashboard_home .container .row #center ._form div button {
+  background: #d70a20;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #d70a20;
+  border-radius: 6px;
+}
+#dashboard_home .container .row #center #detail_de_la_commande ._detail .title {
+  font-size: 20px;
+  font-weight: 100;
+  color: #d70a20;
+}
+#dashboard_home .container .row #center #detail_de_la_commande ._detail ._name, #dashboard_home .container .row #center #detail_de_la_commande ._detail .prenom, #dashboard_home .container .row #center #detail_de_la_commande ._detail .contact, #dashboard_home .container .row #center #detail_de_la_commande ._detail .adresse {
+  padding-right: 20px;
+  font-size: 13px;
+}
+#dashboard_home .container .row #center #detail_de_la_commande ._detail ._name strong, #dashboard_home .container .row #center #detail_de_la_commande ._detail .prenom strong, #dashboard_home .container .row #center #detail_de_la_commande ._detail .contact strong, #dashboard_home .container .row #center #detail_de_la_commande ._detail .adresse strong {
+  margin-left: 20px;
+}
+#dashboard_home .container .row #center #detail_de_la_commande_2 .title {
+  font-size: 20px;
+  font-weight: 100;
+  color: #d70a20;
+}
+#dashboard_home .container .row #center #detail_de_la_commande_4 ._btn {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+#dashboard_home .container .row #center #detail_de_la_commande_4 ._btn .btn-outline-success {
+  margin-right: 20px;
+}
+#dashboard_home .container .row #center #detail_de_la_commande_4 ._btn .btn-outline-success a {
+  color: green;
+}
+#dashboard_home .container .row #center #detail_de_la_commande_4 ._btn .btn-outline-success a:hover {
+  color: white;
+  text-decoration: none;
+}
+#dashboard_home .container .row #center #detail_de_la_commande_4 ._btn .btn-outline-danger {
+  color: #d70a20;
+}
+#dashboard_home .container .row #center #detail_de_la_commande_4 ._btn .btn-outline-danger a {
+  color: #d70a20;
+}
+#dashboard_home .container .row #center #detail_de_la_commande_4 ._btn .btn-outline-danger a:hover {
+  color: white;
+  text-decoration: none;
+}
 #dashboard_home .container .row #center #commande_dispo_row {
   margin-top: 30px;
 }
@@ -439,10 +505,11 @@
   color: black;
   font-size: 14px;
 }
-#dashboard_home .container .row #center #commande_dispo_row .col-md-4 .card .card-header .desc_red {
+#dashboard_home .container .row #center #commande_dispo_row .col-md-4 .card .card-header .desc_red a {
   color: #d70a20;
   font-size: 10px;
   padding-top: 20px;
+  text-decoration: none;
 }
 #dashboard_home .container .row #center #commande_dispo_row .col-md-4 .card .card-body {
   background-color: white;
@@ -576,10 +643,10 @@
   border-radius: 10px;
   font-size: 12px;
 }
-#dashboard_home .container .row #_right ._notification .col-md-12 .card ._icon .fa-exclamation {
+#dashboard_home .container .row #_right ._notification .col-md-12 .card ._icon .bi-exclamation-lg {
   color: #f35162;
 }
-#dashboard_home .container .row #_right ._notification .col-md-12 .card ._icon .fa-envelope {
+#dashboard_home .container .row #_right ._notification .col-md-12 .card ._icon .bi-envelope-fill {
   background: #ffe3b2;
   color: #ffa101;
 }

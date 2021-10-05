@@ -297,8 +297,28 @@
         padding-right: 0px;
         padding-left: 0px;
         .row{
-
+            position: relative;
             /*---------------   left    -------------- */
+            @media (min-width: 320px) and (max-width: 420px) {
+                #_left{
+                    position: absolute;
+                    top: 0px;
+                    left: 25%;
+                    //transform: translateX(-400px);
+                    z-index: 33;
+                    //display: none;
+                    //-webkit-transform: translateX(-400px);
+                    //-moz-transform: translateX(-400px);
+                    //-ms-transform: translateX(-400px);
+                    //-o-transform: translateX(-400px);
+                    border: 2px solid red;
+                    height: 400px;
+                    width: 75%;
+                    background: #f35162;
+                    display: none;
+                }    
+            
+            }
             #_left{
                 position: relative;
                 padding-left: 0px;

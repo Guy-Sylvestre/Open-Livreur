@@ -271,9 +271,23 @@
   padding-left: 0px;
 }
 #dashboard_home .container .row {
+  position: relative;
   /*---------------   left    -------------- */
   /*---------------   center    -------------- */
   /*---------------   right    -------------- */
+}
+@media (min-width: 320px) and (max-width: 420px) {
+  #dashboard_home .container .row #_left {
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    z-index: 33;
+    border: 2px solid red;
+    height: 400px;
+    width: 75%;
+    background: #f35162;
+    display: none;
+  }
 }
 #dashboard_home .container .row #_left {
   position: relative;
