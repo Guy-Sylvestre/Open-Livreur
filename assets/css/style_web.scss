@@ -296,29 +296,7 @@
     .container{
         padding-right: 0px;
         padding-left: 0px;
-        .row{
-            position: relative;
-            /*---------------   left    -------------- */
-            @media (min-width: 320px) and (max-width: 420px) {
-                #_left{
-                    position: absolute;
-                    top: 0px;
-                    left: 25%;
-                    //transform: translateX(-400px);
-                    z-index: 33;
-                    //display: none;
-                    //-webkit-transform: translateX(-400px);
-                    //-moz-transform: translateX(-400px);
-                    //-ms-transform: translateX(-400px);
-                    //-o-transform: translateX(-400px);
-                    border: 2px solid red;
-                    height: 400px;
-                    width: 75%;
-                    background: #f35162;
-                    display: none;
-                }    
-            
-            }
+        
             #_left{
                 position: relative;
                 padding-left: 0px;
@@ -513,6 +491,8 @@
                             color: #d70a20;
                         }
                 }
+                
+
                 #detail_de_la_commande_4{
                   
                     ._btn{
@@ -746,6 +726,174 @@
         }
     }
 
+
+
+
+/*####################### COMMANDE EN COURS ####################*/
+
+#commande_en_cours{
+    
+    .container{
+        /*--------------------  Parcour -----------------*/
+        ._left{
+            .icon_{
+                display: flex;
+                .return_home{
+                    margin-top: 7px;
+                    margin-left: 20px;
+                }
+                i{
+                    color: #000;
+                    font-size: 25px;
+                    margin-top: 20px;
+                    
+                }
+            }
+            .id_commande{
+                .title{
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-left: 15px;
+                }
+            }
+            /*--------------------  Id de la commande  -----------------*/
+            .parcours_commande{
+                margin-left: 15px;
+                margin-top:6px;
+                //background: red;
+                div{
+                    display: flex;
+                   
+                    .traire_1, .traire_2{
+                        display: block;
+                        height: 103px;
+                        width: 1.5px;
+                        background: #D1D6E6;
+                        margin-left: 7px;
+                       }
+                       .distance{
+                           margin-top: 40px;
+                           margin-left: 10px;
+                       }
+                    }
+                p{
+                    display: flex;
+                    justify-content: normal;
+                    margin-bottom: -1px;
+                    .boulle_1{
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        background: #000;
+                        border-radius:50%;
+                        margin-right: 15px;
+                        margin-top: 5px;
+                    }
+                    .boulle_2{
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        background: rgb(255, 255, 255);
+                        border-radius:50%;
+                        margin-right: 15px;
+                        margin-top: 5px;
+                        border: 2px solid #d70a20;
+                    }
+                    .boulle_3{
+                        display: block;
+                        width: 15px;
+                        height: 15px;
+                        background: #d70a20;
+                        border-radius:50%;
+                        margin-right: 15px;
+                        margin-top: 5px;
+                        
+                    }
+                }
+            }
+            /*--------------------  Commande en cours -----------------*/
+            .commande_en_cours{
+                display: flex;
+                align-items: center;
+                ._img{
+                    background: #d70a20;
+                    padding: 10px 10px;
+                    border-radius: 50%;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                .desc{
+                    display: flex;
+                    align-items: center;
+                    background: #d70a20;
+                    margin-left: 5px;
+                    border-radius: 10px;
+                    height: 40px;
+                    .rond_1, .rond_2, .rond_3{
+                        display: block;
+                    }
+                    .rond_1{
+                        width: 8px;
+                        height: 8px;
+                        background: rgba(255, 255, 255, 0.508);
+                        border-radius: 50%;
+                        margin-right: 3px;
+                        margin-left: 3px;
+                    }
+
+                    .rond_2{
+                        width: 10px;
+                        height: 10px;
+                        background: rgb(255, 255, 255);
+                        border-radius: 50%;
+                        margin-right: 5px;
+                    }
+                    .rond_3{
+                        width: 12px;
+                        height: 12px;
+                        background: rgba(255, 255, 255, 0.7);
+                        border-radius: 50%;
+                        margin-right: 5px;
+                    }
+                    p{
+                        color: white;
+                        margin-top: 20px;
+                        font-size: 15px;
+                        margin-right: 3px;
+                    }
+                    
+                }
+            }
+            ._warning_full{
+                display: flex;
+                flex-direction: column;
+                margin-top: 40px;
+                margin-bottom: 50px;
+                .warning_1{
+                    display: flex;
+                    align-items: center;
+                    .__icon{
+                        background: red;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        i{
+                            color: white;
+                            margin: 7px 0px 0px 12px;
+                            display: block;
+                        }
+                    }
+                    p{
+                        margin: 0px 15px 0px 0px;
+                    }
+                }
+                .warning_2, .warning_3, .warning_4, .warning_5, .warning_6{
+                    margin-left: 20px;
+                }
+            }
+                
+        }
+    }
 }
-
-
