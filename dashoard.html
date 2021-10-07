@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
     <link rel="stylesheet" href="./assets/css/style_web.css">
+    <link rel="stylesheet" href="./assets/css/style_mobile.css">
 
     <!--Javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -25,72 +26,117 @@
 <body>
     
     <main>
+       <!--""""""""""""""""""""""   menu pour mobile    """"""""""""""""""--> 
+       <nav id="mobile_responsible">
+            <div class="entete">
+				<div class="title"><a href="./dashoard.html">Open Livreur</a></div>
+				<div class="baree" id="clickButton">
+					<div class="barre_1 change_color"></div>
+					<div class="barre_2 change_color"></div>
+					<div class="barre_3 change_color"></div>
+				</div>
+			</div>
+			
+			<div class="menu display" id="menu">
+				<ul class="nav">
+					<li class="">
+						<a href="#" class="nav-link active"> 
+							<!--Icon home-->
+							<i class="bi bi-house-fill"></i>
+							Acceuil 
+						</a>
+					</li>
+					<li class="">
+						<a href="./mes_commandes.html" class="">
+							<!--Icon commande-->
+							<i class="bi bi-person"></i>
+							Mes commandes 
+						</a>
+					</li>
+					<li class="">
+						<a href="./hsitorique_livraison.html" class="">
+							<!--Icon historique-->
+							<i class="bi bi-clock-history"></i>
+							Historique de livraison
+						</a>
+					</li>
+					<li class="">
+						<a href="./calendrier.html" class="">
+							<!--Calendra-->
+							<i class="bi bi-calendar-day"></i>
+							Calendrier 
+						</a>
+					</li>
+					<li class="">
+						<a href="./mon_compte.html" class="">
+							<!--Icon compte-->
+							<i class="bi bi-person-circle"></i>
+							Mon compte 
+						</a>
+					</li>
+					<li class="">
+						<a href="./index.html" class="">
+							<!--Icon settings-->
+							<i class="bi bi-box-arrow-left"></i>
+							Déconnexion
+						</a>
+					</li>
+				</ul>
+			</div>
+        </nav>
         <section id="dashboard_home">
-            
+           
                 <div class="container">
                     <div class="row">
 <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  left   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
                         <div class="col-md-2  _left" id="_left">
-                            
-                            <div class="row">
-                                <div class="col-md-12 ">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <img src="assets/images/touchpoint-mobile-livreur.png" alt="logo livreur"/>
-                                        </div>
-                                        <div class="card-footer">
-                                            <h1 class="title">Open Livreur </h1>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <nav>
-                                    <ul class="nav">
-                                        <li class="nav-item active">
-                                            <a href="#" class="nav-link active"> 
-                                                <!--Icon home-->
-                                                <i class="bi bi-house-fill"></i>
-                                                Acceuil 
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="./mes_commandes.html" class="nav-link">
-                                                <!--Icon commande-->
-                                                <i class="bi bi-person"></i>
-                                                Mes commandes 
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <!--Icon historique-->
-                                                <i class="bi bi-clock-history"></i>
-                                                Historique de livraison
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <!--Calendra-->
-                                                <i class="bi bi-calendar-day"></i>
-                                                Calendrier 
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <!--Icon compte-->
-                                                <i class="bi bi-person-circle"></i>
-                                                Mon compte 
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <!--Icon settings-->
-                                                <i class="bi bi-box-arrow-left"></i>
-                                                Mon compte 
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
+                            <nav>
+                                <a class="navbar-brand" href="./dashoard.html"><h1 class="title">Open Livreur </h1></a>
+                                <ul class="nav">
+                                    <li class="nav-item active">
+                                        <a href="#" class="nav-link active"> 
+                                            <!--Icon home-->
+                                            <i class="bi bi-house-fill"></i>
+                                            Acceuil 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./mes_commandes.html" class="nav-link">
+                                            <!--Icon commande-->
+                                            <i class="bi bi-person"></i>
+                                            Mes commandes 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./hsitorique_livraison.html" class="nav-link">
+                                            <!--Icon historique-->
+                                            <i class="bi bi-clock-history"></i>
+                                            Historique de livraison
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./calendrier.html" class="nav-link">
+                                            <!--Calendra-->
+                                            <i class="bi bi-calendar-day"></i>
+                                            Calendrier 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./mon_compte.html" class="nav-link">
+                                            <!--Icon compte-->
+                                            <i class="bi bi-person-circle"></i>
+                                            Mon compte 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="./index.html" class="nav-link">
+                                            <!--Icon settings-->
+                                            <i class="bi bi-box-arrow-left"></i>
+                                            Déconnexion
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
 
 <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  center   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
@@ -103,7 +149,7 @@
                             <!--#############   Récapitulatif   #############-->
                             <div class="row" id="recap_row">
                                 <h3 class="summary col-12" id="recap">Récapitulatif</h3>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-12">
                                     <div class="card ">
                                         <!--Enburger-->
                                         <img src="assets/images/Groupe_de_masques_7-removebg-preview.png" alt=""/>
@@ -113,7 +159,7 @@
                                     </div>
                                     
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-12">
                                     <div class="card ">
                                         <!--Packet-->
                                         <img src="assets/images/Groupe_13-removebg-preview.png" alt=""/>
@@ -123,7 +169,7 @@
                                     </div>
                                     
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-4 col-sm-12">
                                     <div class="card">
                                         <!--Etoil-->
                                         <img src="assets/images/Groupe_de_masques_8-removebg-preview.png" alt=""/>
@@ -185,14 +231,24 @@
                                                     </div>
                                                 </div>
                                             </div> 
-                                            <p class="_right"><a href="./commande_refuser.html">Refuser</a></p>
+                                            <p class="_right"><a href="./suprimer_la_commande.html">Refuser</a></p>
 
                                               
                                         </div>
                                     </div> 
                                 </div>
 
-                               
+                               um dolor sit amet consectetur adipisicing elit. Accusamus fugiat facere soluta officiis asperiores maiores sint tempora, omnis esse, distinctio debitis, perspiciatis numquam. Animi nobis, consequatur enim sit dicta labore. <br><br><br><br><br><br><br>
+				rem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat facere soluta officiis asperiores maiores sint tempora, omnis esse, distinctio debitis, perspiciatis numquam. Animi nobis, consequatur enim sit dicta labore. <br><br><br><br><br><br><br>
+				rem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat facere soluta officiis asperiores maiores sint tempora, omnis esse, distinctio debitis, perspiciatis numquam. Animi nobis, consequatur enim sit dicta labore. <br><br><br><br><br><br><br>
+				rem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat facere soluta officiis asperiores maiores sint tempora, omnis esse, distinctio debitis, perspiciatis numquam. Animi nobis, consequatur enim sit dicta labore. <br><br><br><br><br><br><br>
+				rem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat facere soluta officiis asperiores maiores sint tempora, omnis esse, distinctio debitis, perspiciatis numquam. Animi nobis, consequatur enim sit dicta labore. <br><br><br><br><br><br><br>
+				rem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat facere soluta officiis asperiores maiores sint tempora, omnis esse, distinctio debitis, perspiciatis numquam. Animi nobis, consequatur enim sit dicta labore. <br><br><br><br><br><br><br>
+				rem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat facere soluta officiis asperiores maiores sint tempora, omnis esse, distinctio debitis, perspiciatis numquam. Animi nobis, consequatur enim sit dicta labore. <br><br><br><br><br><br><br>
+				rem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat facere soluta officiis asperiores maiores sint tempora, omnis esse, distinctio debitis, perspiciatis numquam. Animi nobis, consequatur enim sit dicta labore. <br><br><br><br><br><br><br>
+				rem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat facere soluta officiis asperiores maiores sint tempora, omnis esse, distinctio debitis, perspiciatis numquam. Animi nobis, consequatur enim sit dicta labore. <br><br><br><br><br><br><br>
+				rem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat facere soluta officiis asperiores maiores sint tempora, omnis esse, distinctio debitis, perspiciatis numquam. Animi nobis, consequatur enim sit dicta labore. <br><br><br><br><br><br><br>
+				rem ipsum dolor sit amet consectetu
                             </div>
                         </div>
 
@@ -256,6 +312,14 @@
             </section>
         </main>
     
-
+    <script>
+		var toggleButton = document.getElementById("clickButton");
+		var Menu = document.getElementById('menu');
+		toggleButton.addEventListener('click', 
+		function() { 
+			Menu.classList.toggle("display");
+			
+		});
+	</script>
 </body>
 </html>

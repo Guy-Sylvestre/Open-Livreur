@@ -18,7 +18,7 @@
     
     <!--Mon script js-->
     <script src="./assets/js/main.js"></script>
-    <title>Detail de la commande</title>
+    <title>Supprimeé la commande</title>
 </head>
 <body>
     <main>
@@ -89,7 +89,7 @@
                                 <a class="navbar-brand" href="./dashoard.html"><h1 class="title">Open Livreur </h1></a>
                                 <ul class="nav">
                                     <li class="nav-item active">
-                                        <a href="./dashoard.html" class="nav-link active"> 
+                                        <a href="#" class="nav-link active"> 
                                             <!--Icon home-->
                                             <i class="bi bi-house-fill"></i>
                                             Acceuil 
@@ -143,7 +143,11 @@
                             <!--Detail de la commande-->
                             <div class="row" id="detail_de_la_commande">
                                 <div class="col-12 _detail">
-                                    <p class="mt-4">Commande n°: <span>1155466DDE1</span></p>
+                                    <!--Supprimer-->
+                                    <div class="delete_ d-flex justify-content-between align-items-center">
+                                        <p class="mt-4">Commande n°: <span>1155466DDE1</span></p>
+                                        <p class="_icon"><a href="#"><i class="bi bi-trash-fill" style="color: red;"></i></a></p>
+                                    </div>
                                     <hr/>
                                     <h3 class="title"> DETAILS SUR LE CLIENT</h3>
                                     <p class="_name">Nom du client: <strong>Chavez</strong></p>
@@ -207,39 +211,32 @@
                                     <div class="total"><strong>8500FCFA</strong></div>
                                 </div>
                             </div>
-                            <div class="row" id="detail_de_la_commande_4">
-                                
-                                <div class="col-md-12 col-sm-12 col-12 _btn">
-                                    
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">
-                                        <a href="#">Accepter <i class="bi bi-x"></i></a>
-                                    </button>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Commande n°: <span>1155466DDE1</span></h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                Vous avez décider de prendre la commande <br/>
-                                                Commande n°: <span>1155466DDE1</span>. Êtes vous sur de vouloir effectué <br/>
-                                                cett livraison
-                                            </div>
-                                            <div class="modal-footer">
-                                                <a href="./commande_en_cours.html" class="btn btn-primary">Je suis sûr</a>
-                                                <a href="./detail_commande.html" class="btn btn-primary">Non</a>
-                                            </div>
-                                            </div>
+                            
+                            <div class="row _feedback">
+                                <h3 class="title col-12 ml-3"> FEEDBACK DU CLIENT</h3>
+                                <div class="col-12 d-flex flex-column">
+                                    <div class="header d-flex">
+                                        <div class="_img">
+                                            <img src="./assets/images/femme-removebg-preview.png" alt=""/>
                                         </div>
-                                    </div>                                    
-                                 
-                                    <button class="btn btn-outline-danger"><a href="./suprimer_la_commande.html" class="">Refuser <i class="bi bi-x"></i></a></button>
+                                        <div class="desc">
+                                            <h3 class="_name">Amanda Chavez</h3>
+                                            <p>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                4.0
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque est 
+                                            perspiciatis ratione quam vero magni tempora ducimus at officia porro 
+                                            non consequuntur, sit minima? Modi ducimus sequi odit inventore nobis!
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
 
@@ -306,15 +303,5 @@
                 </div>
             </section>
         </main>
-
-    <script>
-		var toggleButton = document.getElementById("clickButton");
-		var Menu = document.getElementById('menu');
-		toggleButton.addEventListener('click', 
-		function() { 
-			Menu.classList.toggle("display");
-			
-		});
-	</script>
 </body>
 </html>

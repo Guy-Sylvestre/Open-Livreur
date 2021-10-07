@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!--Bootstrap 4 & Fontawesome-->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -11,16 +13,18 @@
     <link rel="stylesheet" href="./assets/css/style_web.css">
     <link rel="stylesheet" href="./assets/css/style_mobile.css">
 
-   <!--Javascript-->
+    <!--Javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     <!--Mon script js-->
-    <script src="./assets/js/main.js"></script>
-    <title>Detail de la commande</title>
+    <script defer src="./assets/js/main.js"></script>
+    
+    <title>Historique de commande</title>
 </head>
 <body>
+    
     <main>
         <!--""""""""""""""""""""""   menu pour mobile    """"""""""""""""""--> 
        <nav id="mobile_responsible">
@@ -81,15 +85,16 @@
 			</div>
         </nav>
         <section id="dashboard_home">
+           
                 <div class="container">
                     <div class="row">
 <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  left   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                        <div class="col-md-2" id="_left">
+                        <div class="col-md-2  _left" id="_left">
                             <nav>
                                 <a class="navbar-brand" href="./dashoard.html"><h1 class="title">Open Livreur </h1></a>
                                 <ul class="nav">
                                     <li class="nav-item active">
-                                        <a href="./dashoard.html" class="nav-link active"> 
+                                        <a href="./dashoard.html" class="nav-link"> 
                                             <!--Icon home-->
                                             <i class="bi bi-house-fill"></i>
                                             Acceuil 
@@ -103,7 +108,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="./hsitorique_livraison.html" class="nav-link">
+                                        <a href="#" class="nav-link active">
                                             <!--Icon historique-->
                                             <i class="bi bi-clock-history"></i>
                                             Historique de livraison
@@ -136,116 +141,76 @@
 
 <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  center   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
                         
-                        <div class="col-md-8" id="center">
+                        <div class="col-md-8 col-sm-12" id="center">
                             <h3 class="gretting">Welcome Back !</h3>
                             <h1 class="name">Stéphane</h1>
+                            <h1 class="title">Historique de livraison</h1>
 
-                            <!--Detail de la commande-->
-                            <div class="row" id="detail_de_la_commande">
-                                <div class="col-12 _detail">
-                                    <p class="mt-4">Commande n°: <span>1155466DDE1</span></p>
-                                    <hr/>
-                                    <h3 class="title"> DETAILS SUR LE CLIENT</h3>
-                                    <p class="_name">Nom du client: <strong>Chavez</strong></p>
-                                    <p class="prenom">Prénom du client: <strong>Amanda</strong></p>
-                                    <p class="contact">Contact: <strong>0023658974</strong></p>
-                                    <p class="adresse">Adresse du client: <br/></p>
-                                    <p><i class="bi bi-geo-alt-fill"></i> Carrefour Agontinkon, <br/> Cotonou, Benin</p>
-                                </div>
+                            <!--#############   historique de livraison   #############-->
+                            <div class="year d-flex">
+                                <p class="mr-4 jours">De ce jours</p>
+                                <p class="mr-4 week">De cette semaine</p>
+                                <p class="mr- mois">De ce mois</p>
+                                <hr/>
+                            </div>
+                            <div class="div_tableau">
+                                <table class="table table-bordered ">
+                                    <thead class="">
+                                        <tr >
+                                        <th scope="col" class=" _entete text-center">#</th>
+                                        <th scope="col" class=" _entete text-center"> Nom du client</th>
+                                        <th scope="col" class=" _entete text-center"> Prénom du client</th>
+                                        <th scope="col" class=" _entete text-center"> Conctact du client</th>
+                                        <th scope="col" class=" _entete text-center"> Adresse du client</th>
+                                        <th scope="col" class=" _entete text-center"> Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>KOUWANOU</td>
+                                            <td>Anatole</td>
+                                            <td>002236559759</td>
+                                            <td>Cotonou, Akpakpa...</td>
+                                            <td class="d-flex">
+                                                <a href="./detail_commande.html" class="btn mx-2 btn-primary btn-sm"><i class="bi bi-info-circle-fill"></i> Détails</a>
+                                                <!-- Button trigger modal -->
+                                                <p type="button" class=" _left" data-toggle="modal" data-target="#exampleModal">
+                                                    <a href="#" class="btn mx-2 btn-danger btn-sm"><i class="bi bi-trash-fill"></i> Supprimer</a>
+                                                </p>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                        <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Commande n°: <span>1155466DDE1</span></h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            Etes vous sur de voir suprimé cette livraison de <br/>
+                                                            votre historique?
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <a href="./suprimer_la_commande.html" class="btn btn-primary">Je suis sûr </a>
+                                                            <a href="./hsitorique_livraison.html" class="btn btn-primary">Non</a>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
                             </div>
 
-                            <div class="row" id="detail_de_la_commande1">
-                                <div class="col-12">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.2681977253633!2d-3.995387084630855!3d5.376014996100592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1eb53feb6eb79%3A0xa5fda5a9bcf75d74!2sInstitut%20CERCO!5e0!3m2!1sfr!2sci!4v1633600122182!5m2!1sfr!2sci" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                </div>
-                            </div>
 
-                            <div class="row" id="detail_de_la_commande_2">
-                                <h3 class="title col-12 ml-3"> DETAILS SUR LA COMMANDE</h3>
-                                <div class="table-responsive  col-12">
-                                    <table class="table">
-                                        <thead class="thead-light">
-                                            <tr>
-                                            <th scope="col"></th>
-                                            <th scope="col">Produit</th>
-                                            <th scope="col">Description</th>
-                                            <th scope="col">Quantité</th>
-                                            <th scope="col">Prix</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>Mark</td>
-                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                                                    <td>432</td>
-                                                <td>2500CFA</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>Atchè plus Aloko</td>
-                                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                                                <td>432</td>
-                                                <td>1000FCFA</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">3</th>
-                                                <td>Riz au poisson Braisé</td>
-                                                <td>tLorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                                                    <td>432</td>
-                                                <td>250FCFA</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                
-                            </div>
-                            <div class="row" id="detail_de_la_commande_3">
-                                
-                                <div class="col-md-12 col-sm-12 col-12 mt-3" style="text-align: end;">
-                                    <p class="summary">Total du payement</p>
-                                    <div class="total"><strong>8500FCFA</strong></div>
-                                </div>
-                            </div>
-                            <div class="row" id="detail_de_la_commande_4">
-                                
-                                <div class="col-md-12 col-sm-12 col-12 _btn">
-                                    
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">
-                                        <a href="#">Accepter <i class="bi bi-x"></i></a>
-                                    </button>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-                                            <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Commande n°: <span>1155466DDE1</span></h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                Vous avez décider de prendre la commande <br/>
-                                                Commande n°: <span>1155466DDE1</span>. Êtes vous sur de vouloir effectué <br/>
-                                                cett livraison
-                                            </div>
-                                            <div class="modal-footer">
-                                                <a href="./commande_en_cours.html" class="btn btn-primary">Je suis sûr</a>
-                                                <a href="./detail_commande.html" class="btn btn-primary">Non</a>
-                                            </div>
-                                            </div>
-                                        </div>
-                                    </div>                                    
-                                 
-                                    <button class="btn btn-outline-danger"><a href="./suprimer_la_commande.html" class="">Refuser <i class="bi bi-x"></i></a></button>
-                                </div>
-                            </div>
-
+                            <!--#############   Commandes Disponibles   #############-->
+                            
                         </div>
-
-                        
 
 <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  right   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
                         <div class="col-md-2 " id="_right">
@@ -293,8 +258,8 @@
                                     <div class="card">
                                         <p class="desc">Vous n'avez pas encore terminé la confiration  <br/> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>  </p>
                                         <p class="_icon">
-                                            <!--Icon exclamation-->
-                                            <i class="bi bi-exclamation-lg"></i>
+                                             <!--Icon exclamation-->
+                                             <i class="bi bi-exclamation-lg"></i>
                                         </p>
                                     </div>
                                 </div>
@@ -306,7 +271,7 @@
                 </div>
             </section>
         </main>
-
+    
     <script>
 		var toggleButton = document.getElementById("clickButton");
 		var Menu = document.getElementById('menu');

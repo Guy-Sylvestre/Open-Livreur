@@ -1,3 +1,89 @@
+/*####################### Menu de navigation pour mobile ####################*/
+
+main{
+    position: relative;
+    #mobile_responsible{
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 150;
+        .entete{
+            display: flex;
+            justify-content: space-between;
+            height: 150;
+            background: #d70a20;
+            align-items: center;
+            padding-left: 25px;
+            padding-right: 25px;
+            height: 80px;
+            .title{
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+            }
+            .baree{
+                cursor: pointer;
+                padding: 15px;
+                //display: none;
+                .barre_1{
+                    width: 30px;
+                    height: 3px;
+                    background: rgb(255, 255, 255);
+                    margin-bottom: 5px;
+                }
+                .barre_2{
+                    width: 30px;
+                    height: 3px;
+                    background: rgb(255, 255, 255);
+                    margin-bottom: 5px;
+                }
+                .barre_3{
+                    width: 30px;
+                    height: 3px;
+                    background: rgb(255, 255, 255);
+                
+                    }
+                
+                    
+                }
+            }
+        .menu{
+            display: flex;
+            justify-content: end;
+            .nav{
+            //display: none;
+            height: 650px;
+            width: 300px;
+            margin: 0px;
+            padding-top: 25px;
+            padding-left: 45px;
+            background: rgb(255, 255, 255);
+            margin-right: 0px;
+            li{
+                list-style-type: none;
+                margin-top: 50px;
+                a{
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: black;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+                }
+            }
+        }
+        .display{
+            display: none;
+        }
+    }
+}
+
 /*####################### CONNEXION ####################*/
 
 #connexion{
@@ -293,51 +379,32 @@
 /*####################### DASHBOARD HOME ####################*/
 
 #dashboard_home{
+    position: relative;
+    
     .container{
         padding-right: 0px;
         padding-left: 0px;
-        
+            
             #_left{
                 position: relative;
                 padding-left: 0px;
                 position: sticky;
                 height: 100vh;
                 top: 1px;
-                .row{
-                    margin-top: 50px;
-                    .col-md-12{
-                        padding-left: 0px;
-                        
-                        .card{
-                            background: #ffffff;
-                            border: none;
-                            
-                            .card-body{
-                                padding: 0px;
-                                img{
-                                    width: 90px;
-                                    text-align: center;
-                                    margin: auto;
-                                    display: flex;
-                                }
-                            }
-                            .card-footer{
-                                border-top: none;
-                                background: rgb(255, 255, 255);
-                                padding-left: 0px;
-                                padding-right: 0px;
-                                .title{
-                                    color: #d70a20;
-                                    font-size: 22px;
-                                    font-weight: bold;
-                                    text-align: center;
-                                }
-                            }
+               
+                margin-top: 50px;
+                    .navbar-brand{
+                        margin-bottom: 50px;
+                        .title{
+                            color: #d70a20;
+                            font-size: 22px;
+                            font-weight: bold;
+                            text-align: center;
                         }
                     }
                     nav{
                         margin-top: 25px;
-                        margin-left: 20px;
+                        
                         .nav{
                             flex-direction: column;
                             .nav-item{
@@ -346,6 +413,7 @@
                                     color: black;
                                     transition: .25 s ease-in-out;
                                     font-size: 14px;
+                                    padding-left: 0px;
                                     i{
                                         margin-right: 1px;
                                     }
@@ -359,8 +427,11 @@
                             }
                         }
                     }
-                }
+                
+                
             }
+
+            
 
             /*---------------   center    -------------- */
 
@@ -403,12 +474,13 @@
                             box-shadow: 3px 3px 50px rgba(29, 29, 28, 0.158);
                             height: 100px;
                             border: none;
+                            
                             img{
                                 width: 60px;
                                 height: 60px;
                                 text-align: center;
-                                    margin: auto;
-                                    display: flex;
+                                margin: auto;
+                                display: flex;
                             }
                             .card-body{
                                 
@@ -480,7 +552,14 @@
                                 margin-left: 20px;
                             }
                         }
-                       
+
+                        
+                    }
+                }
+
+                #detail_de_la_commande1{
+                    iframe{
+                        width: 100%;
                     }
                 }
 
@@ -527,7 +606,7 @@
                 }
 
 
-
+                
 
                 /*#############   Commandes Disponibles   #############*/
                 #commande_dispo_row{
@@ -617,6 +696,173 @@
                                     }
                                     
                                 }
+                            }
+                        }
+                    }
+                }
+
+
+                /*########################### Historique de commande    ######################*/
+                .year{
+                    position: relative;
+                    p{
+                        font-size: 12px;
+                        color: #43425d;
+                    }
+                    .jours{
+                        color: #d70a20;
+                    }
+                    hr{
+                        display: block;
+                        width: 70px;
+                        height: 0.5px;
+                        background: #d70a20;
+                        position: absolute;
+                        top: 8px;
+                    }
+                }
+                .div_tableau{
+                    width: 100%;
+                    //border: 1px solid #555;
+                    overflow-x: auto;
+                    
+                    .btn-primary{
+                        background: #17a2b8;
+                        border: none;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        
+                        i{
+                            display: block;
+                        }
+                    }
+                    ._left{
+                        margin-bottom: 0px;
+                        .btn-danger{
+                        background: #343a40;
+                        border: none;
+                        font-size: 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        
+                        i{
+                            display: block;
+                            }
+                        }
+                    }
+                    
+                }
+
+
+
+                
+                /*#############   Supprimer la commande   #############*/
+
+                ._feedback{
+                    margin: 10px 5px;
+                    background: white;
+                    .title{
+                        font-size: 18px;
+                        font-weight: 100;
+                        color: #d70a20;
+                        margin-bottom: 25px;
+                    }
+                    .header{
+                        ._img{
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 50%;
+                            //background: red;
+                            position: relative;
+                            overflow: hidden;
+                            img{
+                                width: 70px;
+                                height: 70px;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                        .desc{
+                            i{
+                                color: #ffa200;
+                            }
+                            ._name{
+                                font-size: 25px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+
+
+
+                /*------------------------- calendrie   ----------------*/
+                .calendrier{
+                    background: white;
+                    height: 480px;
+                    border: 1px solid #000;
+                    overflow-x: auto;
+                    
+                    .header{
+                        margin-top: 45px;
+                        margin-left: 5px;
+                        .__dwm{
+                            //background: red;
+                            p{
+                                
+                                padding: 5px 5px;
+                                font-size: 10px;
+                            }
+                            ._month{
+                                color: #d70a20;
+                                border: 1px  solid rgba(148, 134, 134, 0.466);
+                                border-top-right-radius: 5px;
+                                border-bottom-right-radius: 5px;
+                            }
+                            ._weekenk{
+                                border-top: 1px  solid rgba(148, 134, 134, 0.466);
+                                border-bottom: 1px  solid rgba(148, 134, 134, 0.466);
+                            }
+                            ._day{
+                                border: 1px  solid rgba(148, 134, 134, 0.466);
+                                border-top-left-radius: 5px;
+                                border-bottom-left-radius: 5px;
+                            }
+                        }
+                        ._choise{
+                            p{
+                                 font-size: 10px;
+                                 padding: 5px 5px;
+                            }
+                        }
+                    }
+                    ._body{
+                        ._ligne1{
+                            p{
+                                
+                                font-size: 8px;
+                                padding: 5px 45px;
+                                background: #f5f6fa;
+                                border: 1px  solid rgba(148, 134, 134, 0.466);
+                            }
+                        }
+                        ._ligne2{
+                            //margin-left: 5px;
+                            .div1{
+                                width: 120px;
+                                height: 110px;
+                                background: red;
+                                border: 1px  solid rgba(148, 134, 134, 0.466);
+                            }
+                            .div{
+                                width: 125px;
+                                height: 110px;
+                                background: rgb(63, 163, 88);
                             }
                         }
                     }
@@ -722,6 +968,75 @@
                     }
                 }
             }
+
+            /*""""""""""""""""""""""""      Mon compte      """"""""""""""""""""""*/
+            #right_mon_compte{
+                background: #f5f6f8;
+                .detail{
+                    justify-content: space-between;
+                    background: #fff;
+                    margin-top: 150px;
+                    padding: 25px 10px;
+                    .detail_1{
+                        .detail_1_a{
+                            width: 120px;
+                            height: 120px;
+                            background: #000;
+                            border-radius: 50%;
+                            position: relative;
+                            overflow: hidden;
+                            margin-right: 20px;
+                            img{
+                                width: 200px;
+                                height: 200px;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                        .detail_1_b{
+                            .name{
+                                font-size: 15px;
+                                color: #000;
+                                font-weight: bold;
+                            }
+                            p{
+                                font-size: 10px;
+                                 font-weight: 50;
+                                 margin-bottom: 0.5rem;
+                                 i{
+                                     color: #d70a20;
+                                 }
+                            }
+                        }
+                    }
+                    .detail_2{
+                        p{
+                            font-size: 10px;
+                            font-weight: 50;
+                            strong{
+                                font-weight: bold;
+                            }
+                        }
+                        .number_inscription{
+                            strong{
+                                margin-left: 5px;
+                            }
+                        }
+                        .email{
+                            strong{
+                                margin-left: 70px;
+                            }
+                        }
+                        .contact{
+                            strong{
+                                margin-left: 60px;
+                            }
+                        }
+                    }
+                }
+            }
               
         }
     }
@@ -729,13 +1044,16 @@
 
 
 
-/*####################### COMMANDE EN COURS ####################*/
+/*####################### COMMANDE EN COURS && TREMINEE ####################*/
 
 #commande_en_cours{
     
     .container{
+        /*--------------------  left -----------------*/
+
         /*--------------------  Parcour -----------------*/
         ._left{
+            
             .icon_{
                 display: flex;
                 .return_home{
@@ -866,6 +1184,56 @@
                     
                 }
             }
+
+            /*--------------------  Félicitation -----------------*/
+            ._congratulation{
+                margin-top: 70px;
+                ._img{
+                    position: relative;
+                    img{
+                        width: 120px;
+                        text-align: center;
+                        margin: auto;
+                        display: flex;
+                    }
+                }
+                .desc{
+                    margin-top: 25px;
+                    font-size: 18px;
+                }
+                .desc_{
+                    font-size: 18px;
+                }
+                .round{
+                    height: 100px;
+                    width: 100px;
+                    background: #000;
+                    position: relative;
+                    margin: auto;
+                    overflow: hidden;
+                    border-radius: 50%;
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        text-align: center;
+                        margin: auto;
+                        display: flex;
+                    }
+                }
+                .title{
+                        font-size: 18px;
+                        margin-top: 10px;
+                        font-weight: bold;
+                }
+                .etoil{
+                    .bi{
+                        color: #d70a20;
+                    }
+                }
+            }
+
+
+            /*--------------------  warning -----------------*/
             ._warning_full{
                 display: flex;
                 flex-direction: column;
@@ -895,5 +1263,42 @@
             }
                 
         }
+        
+
+
+
+        /*--------------------  right -----------------*/
+        ._right{
+            position: relative;
+            iframe{
+                width: 100%;
+                }
+            }
+
+            .finish{
+                width: 350px;
+                height: 140px;
+                background: #fff;
+                border-radius: 15px;
+                position: absolute;
+                left: 50%;
+                bottom: 50%;
+                transform: translate(-50%, 100%);
+                margin: auto;
+                .desc{
+                    font-size: 15px;
+                    padding: 20px 5px 10px;
+                    text-align: center;
+                }
+                ._button{
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        display: inline-block;
+                        font-size: 12px;
+                        padding: 8px;
+                    }
+                }
+            }
+        }
     }
-}

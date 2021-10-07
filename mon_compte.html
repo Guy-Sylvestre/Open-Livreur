@@ -1,26 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootstrap 4 & Fontawesome-->
     
+    <!--Bootstrap 4 & Fontawesome-->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
     <link rel="stylesheet" href="./assets/css/style_web.css">
     <link rel="stylesheet" href="./assets/css/style_mobile.css">
 
-   <!--Javascript-->
+    <!--Javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     <!--Mon script js-->
-    <script src="./assets/js/main.js"></script>
-    <title>Mes commandes</title>
+    <script defer src="./assets/js/main.js"></script>
+    
+    <title>Calendrier</title>
 </head>
 <body>
+    
     <main>
         <!--""""""""""""""""""""""   menu pour mobile    """"""""""""""""""--> 
        <nav id="mobile_responsible">
@@ -36,7 +40,7 @@
 			<div class="menu display" id="menu">
 				<ul class="nav">
 					<li class="">
-						<a href="#" class="nav-link active"> 
+						<a href="./dashoard.html" class="nav-link"> 
 							<!--Icon home-->
 							<i class="bi bi-house-fill"></i>
 							Acceuil 
@@ -81,22 +85,23 @@
 			</div>
         </nav>
         <section id="dashboard_home">
+           
                 <div class="container">
                     <div class="row">
 <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  left   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                        <div class="col-md-2" id="_left">
+                        <div class="col-md-2  _left" id="_left">
                             <nav>
                                 <a class="navbar-brand" href="./dashoard.html"><h1 class="title">Open Livreur </h1></a>
                                 <ul class="nav">
                                     <li class="nav-item active">
-                                        <a href="#" class="nav-link"> 
+                                        <a href="./dashoard.html" class="nav-link"> 
                                             <!--Icon home-->
                                             <i class="bi bi-house-fill"></i>
                                             Acceuil 
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#" class="nav-link active">
+                                        <a href="./mes_commandes.html" class="nav-link">
                                             <!--Icon commande-->
                                             <i class="bi bi-person"></i>
                                             Mes commandes 
@@ -117,14 +122,14 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="./mon_compte.html" class="nav-link">
+                                        <a href="#" class="nav-link active">
                                             <!--Icon compte-->
                                             <i class="bi bi-person-circle"></i>
                                             Mon compte 
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="./index.html" class="nav-link">
+                                        <a href="./index.html" class="nav-link ">
                                             <!--Icon settings-->
                                             <i class="bi bi-box-arrow-left"></i>
                                             Déconnexion
@@ -134,92 +139,37 @@
                             </nav>
                         </div>
 
-<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  center   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Mon compte   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
                         
-                        <div class="col-md-8" id="center">
-                            <h3 class="gretting">Welcome Back !</h3>
-                            <h1 class="name">Stéphane</h1>
-                            <h1 class="title">Tableau de bord</h1>
-
-                            <!--#############   Bouton de recherche   #############-->
-                        <div class="input-group mb-3 _form">
-                            <input type="text" class="form-control" placeholder="Rechercher une commande" aria-label="Recipient's username" aria-describedby="button-addon2"/>
-                            <div class="input-group-append ml-2">
-                                <button class="btn btn-outline-secondary"  type="button" id="button-addon2">RECHERCHE</button>
+                        <div class="col-md-10 col-sm-12" id="right_mon_compte">
+                            <div class="detail d-flex align-items-center">
+                                <div class="detail_1 d-flex align-items-center">
+                                    <div class="detail_1_a">
+                                        <img src="./assets/images/mon_profile-removebg-preview.png" alt="">
+                                    </div>
+                                    <div class="detail_1_b">
+                                        <h3 class="name">Stéphane OLOULOU</h3>
+                                        <p><i class="bi bi-geo-alt-fill"></i> Lorem ipsum dolor sit amet</p>
+                                        <p>xyza@groupecerco.com</p>
+                                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br/>
+                                            In quae vel sint id ea vitae enim quisquam veniam numquam labore fugiat <br/> deserunt repellat,
+                                            hic quos, delectus, nostrum reiciendis dolore laudantium?</p>
+                                    </div>
+                                </div>
+                                <div class="detail_2">
+                                    <p class="number_inscription">Numéro d'inscription: <strong>0022335544</strong></p>
+                                    <p class="email">Email: <strong>niyaspulat@gmail.com</strong></p>
+                                    <p class="contact">Contact: <strong>+22966553355488</strong></p>
+                                </div>
                             </div>
                         </div>
-                            
 
-                            <!--#############   Commandes Disponibles   #############-->
-                            <div class="row" id="commande_dispo_row">
-                                <h3 class="summary col-12 mb-3" id="commande_dispo">Commandes Disponibles</h3>
-
-                                
-
-                                
-                            </div>
-                        </div>
-
-<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  right   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-                        <div class="col-md-2 " id="_right">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <img src="assets/images/Groupe de masques 468.png" alt="Avatar du livreur"/>
-                                        <div class="card-body">
-                                            <p class="desc_red">Bonjour</p>
-                                            <h1 class="title">Stéphane !</h1>
-                                            <p class="desc">Modifier mon profil</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <img src="assets/images/Composant 10 – 1.png" alt="Bagbe de filicitation"/>
-                                </div>
-                            </div>
-
-                            <div class="row _notification">
-                                <div class="col-md-12">
-                                    <div class="row">
-                                        <p class="col-md-7 desc_1">Notifications</p>
-                                        <p class="col-md-5 desc_2">Tous voir</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <p class="desc">Vous avez une nouvelle commande <br/> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>  </p>
-                                        <p class="_icon">
-                                            <!--Icon exclamation-->
-                                            <i class="bi bi-exclamation-lg"></i>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <p class="desc">Vous avez un nouveau message de open marcket <br/> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>  </p>
-                                        <p class="_icon">
-                                            <i class="bi bi-envelope-fill"></i>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="card">
-                                        <p class="desc">Vous n'avez pas encore terminé la confiration  <br/> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>  </p>
-                                        <p class="_icon">
-                                            <!--Icon exclamation-->
-                                            <i class="bi bi-exclamation-lg"></i>
-                                        </p>
-                                    </div>
-                                </div>
-
-                                
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
         </main>
-
+    
     <script>
 		var toggleButton = document.getElementById("clickButton");
 		var Menu = document.getElementById('menu');

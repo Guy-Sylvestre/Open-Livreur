@@ -1,0 +1,103 @@
+@media screen and (max-width: 500px) {
+    main{
+        #mobile_responsible{
+                display: block;
+               
+            }
+        #dashboard_home{
+        .container{
+            .row{
+                #_left{
+                    display: none;
+                    background: red;
+                    margin-left: 25px;
+                    nav{
+                        .nav{
+                            background: green;
+                            //display: none;
+                        }
+                    }
+                }
+                #center{
+                    .gretting, .name, .title{
+                        margin-left: 25px;
+                    }
+                    #recap_row{
+                        #recap{
+                            margin-left: 15px;
+                        }
+                        .col-md-4{
+                            #card{
+                                background: red;
+                            }
+                        }
+                        
+                    }
+                }
+                #_right{
+                    display: none;
+                }
+                #right_mon_compte{
+                .detail{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .detail_1{
+                        
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        
+                        .detail_1_a{
+                            margin-right: 0px;
+                        }
+                        .detail_1_b{
+                            .name{
+                                margin-top: 25px;
+                            }
+                            .desc{
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                    .detail_2{
+                        p{
+                            
+                            strong{
+                                font-weight: bold;
+                            }
+                        }
+                        .number_inscription, .email, .contact{
+                            margin-bottom: .5rem;
+                        }
+                        .number_inscription{
+                            strong{
+                                margin-left: 5px;
+                            }
+                        }
+                        .email{
+                            strong{
+                                margin-left: 70px;
+                            }
+                        }
+                        .contact{
+                            strong{
+                                margin-left: 60px;
+                                }
+                            }
+                        }
+                    }
+                }      
+
+              }
+          }
+      }
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+}

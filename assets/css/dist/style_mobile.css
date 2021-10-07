@@ -1,0 +1,61 @@
+@media screen and (max-width: 500px) {
+  main #mobile_responsible {
+    display: block;
+  }
+  main #dashboard_home .container .row #_left {
+    display: none;
+    background: red;
+    margin-left: 25px;
+  }
+  main #dashboard_home .container .row #_left nav .nav {
+    background: green;
+  }
+  main #dashboard_home .container .row #center .gretting, main #dashboard_home .container .row #center .name, main #dashboard_home .container .row #center .title {
+    margin-left: 25px;
+  }
+  main #dashboard_home .container .row #center #recap_row #recap {
+    margin-left: 15px;
+  }
+  main #dashboard_home .container .row #center #recap_row .col-md-4 #card {
+    background: red;
+  }
+  main #dashboard_home .container .row #_right {
+    display: none;
+  }
+  main #dashboard_home .container .row #right_mon_compte .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  main #dashboard_home .container .row #right_mon_compte .detail .detail_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  main #dashboard_home .container .row #right_mon_compte .detail .detail_1 .detail_1_a {
+    margin-right: 0px;
+  }
+  main #dashboard_home .container .row #right_mon_compte .detail .detail_1 .detail_1_b .name {
+    margin-top: 25px;
+  }
+  main #dashboard_home .container .row #right_mon_compte .detail .detail_1 .detail_1_b .desc {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  main #dashboard_home .container .row #right_mon_compte .detail .detail_2 p strong {
+    font-weight: bold;
+  }
+  main #dashboard_home .container .row #right_mon_compte .detail .detail_2 .number_inscription, main #dashboard_home .container .row #right_mon_compte .detail .detail_2 .email, main #dashboard_home .container .row #right_mon_compte .detail .detail_2 .contact {
+    margin-bottom: 0.5rem;
+  }
+  main #dashboard_home .container .row #right_mon_compte .detail .detail_2 .number_inscription strong {
+    margin-left: 5px;
+  }
+  main #dashboard_home .container .row #right_mon_compte .detail .detail_2 .email strong {
+    margin-left: 70px;
+  }
+  main #dashboard_home .container .row #right_mon_compte .detail .detail_2 .contact strong {
+    margin-left: 60px;
+  }
+}
