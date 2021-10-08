@@ -1,5 +1,9 @@
 @charset "UTF-8";
-/*####################### Menu de navigation pour mobile ####################*/
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*------------- Menu de navigation pour mobile ------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
 main {
   position: relative;
 }
@@ -77,7 +81,11 @@ main #mobile_responsible .display {
   display: none;
 }
 
-/*####################### CONNEXION ####################*/
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*---------------------------- CONNEXION ------------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
 #connexion {
   margin-top: 10%;
 }
@@ -171,7 +179,11 @@ main #mobile_responsible .display {
   text-decoration: none;
 }
 
-/*####################### RESERT PASSWORD ####################*/
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*----------------------- RESERT PASSWORD ---------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
 #resert_pwd {
   margin-top: 10%;
 }
@@ -244,7 +256,11 @@ main #mobile_responsible .display {
   text-decoration: none;
 }
 
-/*####################### CREATE NEW PASSWORD ####################*/
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*----------------------- CREATE NEW PASSWORD -------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
 #create_pwd {
   margin-top: 10%;
 }
@@ -343,16 +359,18 @@ main #mobile_responsible .display {
   text-decoration: none;
 }
 
-/*####################### DASHBOARD HOME ####################*/
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*----------------------------- DASHBOARD -----------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+/*----------------------------- left ----------------------------*/
 #dashboard_home {
   position: relative;
 }
 #dashboard_home .container {
   padding-right: 0px;
   padding-left: 0px;
-  /*---------------   center    -------------- */
-  /*---------------   right    -------------- */
-  /*""""""""""""""""""""""""      Mon compte      """"""""""""""""""""""*/
 }
 #dashboard_home .container #_left {
   position: relative;
@@ -395,17 +413,14 @@ main #mobile_responsible .display {
 #dashboard_home .container #_left nav .nav .nav-item .active {
   color: #d70a20;
 }
+
+/*----------------------------- center ----------------------------*/
 #dashboard_home .container #center {
   padding-left: 15px;
   padding-right: 15px;
   background: #f7f8fa;
   /*#############   Récapitulatif   #############*/
-  /*#############   Bouton de recherche   #############*/
-  /*#############   Detail de la commande   #############*/
   /*#############   Commandes Disponibles   #############*/
-  /*########################### Historique de commande    ######################*/
-  /*#############   Supprimer la commande   #############*/
-  /*------------------------- calendrie   ----------------*/
 }
 #dashboard_home .container #center .gretting {
   margin-top: 50px;
@@ -474,59 +489,6 @@ main #mobile_responsible .display {
   position: absolute;
   top: 60px;
   left: 55px;
-}
-#dashboard_home .container #center ._form div button {
-  background: #d70a20;
-  color: white;
-  font-weight: bold;
-  border: 1px solid #d70a20;
-  border-radius: 6px;
-}
-#dashboard_home .container #center #detail_de_la_commande ._detail .title {
-  font-size: 20px;
-  font-weight: 100;
-  color: #d70a20;
-}
-#dashboard_home .container #center #detail_de_la_commande ._detail ._name, #dashboard_home .container #center #detail_de_la_commande ._detail .prenom, #dashboard_home .container #center #detail_de_la_commande ._detail .contact, #dashboard_home .container #center #detail_de_la_commande ._detail .adresse {
-  padding-right: 20px;
-  font-size: 13px;
-}
-#dashboard_home .container #center #detail_de_la_commande ._detail ._name strong, #dashboard_home .container #center #detail_de_la_commande ._detail .prenom strong, #dashboard_home .container #center #detail_de_la_commande ._detail .contact strong, #dashboard_home .container #center #detail_de_la_commande ._detail .adresse strong {
-  margin-left: 20px;
-}
-#dashboard_home .container #center #detail_de_la_commande1 iframe {
-  width: 100%;
-}
-#dashboard_home .container #center #detail_de_la_commande_2 .title {
-  font-size: 20px;
-  font-weight: 100;
-  color: #d70a20;
-}
-#dashboard_home .container #center #detail_de_la_commande_4 ._btn {
-  display: flex;
-  justify-content: end;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-#dashboard_home .container #center #detail_de_la_commande_4 ._btn .btn-outline-success {
-  margin-right: 20px;
-}
-#dashboard_home .container #center #detail_de_la_commande_4 ._btn .btn-outline-success a {
-  color: green;
-}
-#dashboard_home .container #center #detail_de_la_commande_4 ._btn .btn-outline-success a:hover {
-  color: white;
-  text-decoration: none;
-}
-#dashboard_home .container #center #detail_de_la_commande_4 ._btn .btn-outline-danger {
-  color: #d70a20;
-}
-#dashboard_home .container #center #detail_de_la_commande_4 ._btn .btn-outline-danger a {
-  color: #d70a20;
-}
-#dashboard_home .container #center #detail_de_la_commande_4 ._btn .btn-outline-danger a:hover {
-  color: white;
-  text-decoration: none;
 }
 #dashboard_home .container #center #commande_dispo_row {
   margin-top: 30px;
@@ -612,134 +574,10 @@ main #mobile_responsible .display {
 #dashboard_home .container #center #commande_dispo_row .col-md-4 .card .card-footer ._left a {
   color: #d70a20;
 }
-#dashboard_home .container #center .year {
+
+/*----------------------------- right ----------------------------*/
+#dashboard_home {
   position: relative;
-}
-#dashboard_home .container #center .year p {
-  font-size: 12px;
-  color: #43425d;
-}
-#dashboard_home .container #center .year .jours {
-  color: #d70a20;
-}
-#dashboard_home .container #center .year hr {
-  display: block;
-  width: 70px;
-  height: 0.5px;
-  background: #d70a20;
-  position: absolute;
-  top: 8px;
-}
-#dashboard_home .container #center .div_tableau {
-  width: 100%;
-  overflow-x: auto;
-}
-#dashboard_home .container #center .div_tableau .btn-primary {
-  background: #17a2b8;
-  border: none;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-#dashboard_home .container #center .div_tableau .btn-primary i {
-  display: block;
-}
-#dashboard_home .container #center .div_tableau ._left {
-  margin-bottom: 0px;
-}
-#dashboard_home .container #center .div_tableau ._left .btn-danger {
-  background: #343a40;
-  border: none;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-#dashboard_home .container #center .div_tableau ._left .btn-danger i {
-  display: block;
-}
-#dashboard_home .container #center ._feedback {
-  margin: 10px 5px;
-  background: white;
-}
-#dashboard_home .container #center ._feedback .title {
-  font-size: 18px;
-  font-weight: 100;
-  color: #d70a20;
-  margin-bottom: 25px;
-}
-#dashboard_home .container #center ._feedback .header ._img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-}
-#dashboard_home .container #center ._feedback .header ._img img {
-  width: 70px;
-  height: 70px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#dashboard_home .container #center ._feedback .header .desc i {
-  color: #ffa200;
-}
-#dashboard_home .container #center ._feedback .header .desc ._name {
-  font-size: 25px;
-  font-weight: bold;
-}
-#dashboard_home .container #center .calendrier {
-  background: white;
-  height: 480px;
-  border: 1px solid #000;
-  overflow-x: auto;
-}
-#dashboard_home .container #center .calendrier .header {
-  margin-top: 45px;
-  margin-left: 5px;
-}
-#dashboard_home .container #center .calendrier .header .__dwm p {
-  padding: 5px 5px;
-  font-size: 10px;
-}
-#dashboard_home .container #center .calendrier .header .__dwm ._month {
-  color: #d70a20;
-  border: 1px solid rgba(148, 134, 134, 0.466);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-#dashboard_home .container #center .calendrier .header .__dwm ._weekenk {
-  border-top: 1px solid rgba(148, 134, 134, 0.466);
-  border-bottom: 1px solid rgba(148, 134, 134, 0.466);
-}
-#dashboard_home .container #center .calendrier .header .__dwm ._day {
-  border: 1px solid rgba(148, 134, 134, 0.466);
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-#dashboard_home .container #center .calendrier .header ._choise p {
-  font-size: 10px;
-  padding: 5px 5px;
-}
-#dashboard_home .container #center .calendrier ._body ._ligne1 p {
-  font-size: 8px;
-  padding: 5px 45px;
-  background: #f5f6fa;
-  border: 1px solid rgba(148, 134, 134, 0.466);
-}
-#dashboard_home .container #center .calendrier ._body ._ligne2 .div1 {
-  width: 120px;
-  height: 110px;
-  background: red;
-  border: 1px solid rgba(148, 134, 134, 0.466);
-}
-#dashboard_home .container #center .calendrier ._body ._ligne2 .div {
-  width: 125px;
-  height: 110px;
-  background: #3fa358;
 }
 #dashboard_home .container #_right {
   position: relative;
@@ -829,6 +667,143 @@ main #mobile_responsible .display {
   background: #ffe3b2;
   color: #ffa101;
 }
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*------------------------ MES COMMANDES ---------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+#dashboard_home .container #center ._form div button {
+  background: #d70a20;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #d70a20;
+  border-radius: 6px;
+}
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*---------------------- HISTORIQUE DE LIVRAISON ----------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+#dashboard_home .container #center {
+  /*---------Historique de commande ----------*/
+}
+#dashboard_home .container #center .year {
+  position: relative;
+}
+#dashboard_home .container #center .year p {
+  font-size: 12px;
+  color: #43425d;
+}
+#dashboard_home .container #center .year .jours {
+  color: #d70a20;
+}
+#dashboard_home .container #center .year hr {
+  display: block;
+  width: 70px;
+  height: 0.5px;
+  background: #d70a20;
+  position: absolute;
+  top: 8px;
+}
+#dashboard_home .container #center .div_tableau {
+  width: 100%;
+  overflow-x: auto;
+}
+#dashboard_home .container #center .div_tableau .btn-primary {
+  background: #17a2b8;
+  border: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#dashboard_home .container #center .div_tableau .btn-primary i {
+  display: block;
+}
+#dashboard_home .container #center .div_tableau ._left {
+  margin-bottom: 0px;
+}
+#dashboard_home .container #center .div_tableau ._left .btn-danger {
+  background: #343a40;
+  border: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#dashboard_home .container #center .div_tableau ._left .btn-danger i {
+  display: block;
+}
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*----------------------------- CALENDRIER ----------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+#dashboard_home .container #center {
+  /*------------------------- calendrie   ----------------*/
+}
+#dashboard_home .container #center .calendrier {
+  background: white;
+  height: 480px;
+  border: 1px solid #000;
+  overflow-x: auto;
+}
+#dashboard_home .container #center .calendrier .header {
+  margin-top: 45px;
+  margin-left: 5px;
+}
+#dashboard_home .container #center .calendrier .header .__dwm p {
+  padding: 5px 5px;
+  font-size: 10px;
+}
+#dashboard_home .container #center .calendrier .header .__dwm ._month {
+  color: #d70a20;
+  border: 1px solid rgba(148, 134, 134, 0.466);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#dashboard_home .container #center .calendrier .header .__dwm ._weekenk {
+  border-top: 1px solid rgba(148, 134, 134, 0.466);
+  border-bottom: 1px solid rgba(148, 134, 134, 0.466);
+}
+#dashboard_home .container #center .calendrier .header .__dwm ._day {
+  border: 1px solid rgba(148, 134, 134, 0.466);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#dashboard_home .container #center .calendrier .header ._choise p {
+  font-size: 10px;
+  padding: 5px 5px;
+}
+#dashboard_home .container #center .calendrier ._body ._ligne1 p {
+  font-size: 8px;
+  padding: 5px 45px;
+  background: #f5f6fa;
+  border: 1px solid rgba(148, 134, 134, 0.466);
+}
+#dashboard_home .container #center .calendrier ._body ._ligne2 .div1 {
+  width: 120px;
+  height: 110px;
+  background: red;
+  border: 1px solid rgba(148, 134, 134, 0.466);
+}
+#dashboard_home .container #center .calendrier ._body ._ligne2 .div {
+  width: 125px;
+  height: 110px;
+  background: #3fa358;
+}
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*----------------------------- MON COMPTE -----------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+#dashboard_home .container {
+  /*""""""  Mon compte  """"""""*/
+}
 #dashboard_home .container #right_mon_compte {
   background: #f5f6f8;
 }
@@ -885,10 +860,103 @@ main #mobile_responsible .display {
   margin-left: 60px;
 }
 
-/*####################### COMMANDE EN COURS && TREMINEE ####################*/
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*---------------------- Detail de la commande  ----------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+#dashboard_home .container #center #detail_de_la_commande ._detail .title {
+  font-size: 20px;
+  font-weight: 100;
+  color: #d70a20;
+}
+#dashboard_home .container #center #detail_de_la_commande ._detail ._name, #dashboard_home .container #center #detail_de_la_commande ._detail .prenom, #dashboard_home .container #center #detail_de_la_commande ._detail .contact, #dashboard_home .container #center #detail_de_la_commande ._detail .adresse {
+  padding-right: 20px;
+  font-size: 13px;
+}
+#dashboard_home .container #center #detail_de_la_commande ._detail ._name strong, #dashboard_home .container #center #detail_de_la_commande ._detail .prenom strong, #dashboard_home .container #center #detail_de_la_commande ._detail .contact strong, #dashboard_home .container #center #detail_de_la_commande ._detail .adresse strong {
+  margin-left: 20px;
+}
+#dashboard_home .container #center #detail_de_la_commande1 iframe {
+  width: 100%;
+}
+#dashboard_home .container #center #detail_de_la_commande_2 .title {
+  font-size: 20px;
+  font-weight: 100;
+  color: #d70a20;
+}
+#dashboard_home .container #center #detail_de_la_commande_4 ._btn {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+#dashboard_home .container #center #detail_de_la_commande_4 ._btn .btn-outline-success {
+  margin-right: 20px;
+}
+#dashboard_home .container #center #detail_de_la_commande_4 ._btn .btn-outline-success a {
+  color: green;
+}
+#dashboard_home .container #center #detail_de_la_commande_4 ._btn .btn-outline-success a:hover {
+  color: white;
+  text-decoration: none;
+}
+#dashboard_home .container #center #detail_de_la_commande_4 ._btn .btn-outline-danger {
+  color: #d70a20;
+}
+#dashboard_home .container #center #detail_de_la_commande_4 ._btn .btn-outline-danger a {
+  color: #d70a20;
+}
+#dashboard_home .container #center #detail_de_la_commande_4 ._btn .btn-outline-danger a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*---------------------- Supprimer la commande  ----------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+#dashboard_home .container #center ._feedback {
+  margin: 10px 5px;
+  background: white;
+}
+#dashboard_home .container #center ._feedback .title {
+  font-size: 18px;
+  font-weight: 100;
+  color: #d70a20;
+  margin-bottom: 25px;
+}
+#dashboard_home .container #center ._feedback .header ._img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+#dashboard_home .container #center ._feedback .header ._img img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#dashboard_home .container #center ._feedback .header .desc i {
+  color: #ffa200;
+}
+#dashboard_home .container #center ._feedback .header .desc ._name {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*-------------- COMMANDE EN COURS && TREMINEE -------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
 #commande_en_cours .container {
-  /*--------------------  left -----------------*/
-  /*--------------------  Parcour -----------------*/
+  /*--------------------  left ----------------*/
   /*--------------------  right -----------------*/
 }
 #commande_en_cours .container ._left {

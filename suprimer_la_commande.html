@@ -36,7 +36,7 @@
 			<div class="menu display" id="menu">
 				<ul class="nav">
 					<li class="">
-						<a href="#" class="nav-link active"> 
+						<a href="./dashoard.html" class="nav-link active"> 
 							<!--Icon home-->
 							<i class="bi bi-house-fill"></i>
 							Acceuil 
@@ -303,5 +303,15 @@
                 </div>
             </section>
         </main>
+
+        <script>
+            var toggleButton = document.getElementById("clickButton");
+            var Menu = document.getElementById('menu');
+            toggleButton.addEventListener('click', 
+            function() { 
+                Menu.classList.toggle("display");
+                
+            });
+        </script>
 </body>
 </html>

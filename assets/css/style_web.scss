@@ -1,5 +1,8 @@
-/*####################### Menu de navigation pour mobile ####################*/
-
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*------------- Menu de navigation pour mobile ------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
 main{
     position: relative;
     #mobile_responsible{
@@ -84,7 +87,12 @@ main{
     }
 }
 
-/*####################### CONNEXION ####################*/
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*---------------------------- CONNEXION ------------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
 
 #connexion{
     margin-top: 10%;
@@ -189,7 +197,11 @@ main{
 
 
 
-/*####################### RESERT PASSWORD ####################*/
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*----------------------- RESERT PASSWORD ---------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
 
 #resert_pwd{
     margin-top: 10%;
@@ -270,7 +282,11 @@ main{
     }
 }
 
-/*####################### CREATE NEW PASSWORD ####################*/
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*----------------------- CREATE NEW PASSWORD -------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
 
 #create_pwd{
     margin-top: 10%;
@@ -376,8 +392,15 @@ main{
 }
 
 
-/*####################### DASHBOARD HOME ####################*/
 
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*----------------------------- DASHBOARD -----------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+
+/*----------------------------- left ----------------------------*/
 #dashboard_home{
     position: relative;
     
@@ -430,628 +453,706 @@ main{
                 
                 
             }
+    }
+}
 
-            
-
-            /*---------------   center    -------------- */
-
-            #center{
-                
-                padding-left: 15px;
-                padding-right: 15px;
-                background: #f7f8fa;
-                .gretting{
-                    margin-top: 50px;
-                    color: #d70a20;
-                    font-size: 14px;
-                    font-weight: 100 !important;
-                }
-                .name{
-                    color: black;
-                    font-weight: bold;
-                    font-size: 25px;
-                }
-                .title{
-                    color: black;
-                    font-weight: bold;
-                    margin-top: 30px;
-                    margin-bottom: 25px;
-                    font-size: 25px;
-                }
-
-                /*#############   Récapitulatif   #############*/
-                #recap_row{
-                    #recap{
-                        color: #d70a20;
-                        font-size: 14px;
-                        font-weight: 500;
-                    }
-                    .col-md-4{
-                        
-                        .card{
-                            flex-direction: row-reverse;
-                            border-radius: 8px;
-                            box-shadow: 3px 3px 50px rgba(29, 29, 28, 0.158);
-                            height: 100px;
-                            border: none;
-                            
-                            img{
-                                width: 60px;
-                                height: 60px;
-                                text-align: center;
-                                margin: auto;
-                                display: flex;
-                            }
-                            .card-body{
-                                
-                                position: relative;
-                                padding: 10px 10px 15px 10px;
-                                .desc{
-                                    font-size: 15px;
-                                    span{
-                                        font-size: 25px;
-                                        font-weight: bold;
-                                        color: #d70a20;
-                                        padding-left: 15px;
-                                    }
-                                    .principal{
-                                        font-size: 25px;
-                                    }
-                                    .bas{
-                                        display: block;
-                                        position: absolute;
-                                        top: 70px;
-                                        left: 25px;
-                                        font-size: 12px;
-                                        font-weight: 100;
-                                    }
-                                    .haut{
-                                        img{
-                                            width: 10px;
-                                            height: 10px;
-                                            position: absolute;
-                                            top: 60px;
-                                            left: 55px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-            
-                }
-
-
-                /*#############   Bouton de recherche   #############*/
-                ._form{
-                    div{
-                        button{
-                            background: #d70a20;
-                            color: white;
-                            font-weight: bold;
-                            border: 1px solid #d70a20;
-                            border-radius: 6px;
-                        }
-                    }
-                }
-
-
-
-                /*#############   Detail de la commande   #############*/
-                #detail_de_la_commande{
-                    ._detail{
-                        .title{
-                            font-size: 20px;
-                            font-weight: 100;
-                            color: #d70a20;
-                        }
-                        ._name, .prenom, .contact, .adresse{
-                            padding-right: 20px;
-                            font-size: 13px;
-                            strong{
-                                margin-left: 20px;
-                            }
-                        }
-
-                        
-                    }
-                }
-
-                #detail_de_la_commande1{
-                    iframe{
-                        width: 100%;
-                    }
-                }
-
-                #detail_de_la_commande_2{
-                    .title{
-                            font-size: 20px;
-                            font-weight: 100;
-                            color: #d70a20;
-                        }
-                }
-                
-
-                #detail_de_la_commande_4{
-                  
-                    ._btn{
-                        display: flex;
-                        justify-content: end;
-                        margin-top: 20px;
-                        margin-bottom: 50px;
-                        .btn-outline-success{
-                            
-                            margin-right: 20px;
-                            a{
-                                color: green;
-                            }
-                            a:hover{
-                                color: white;
-                                text-decoration: none;
-                            }
-                        }
-                        .btn-outline-danger{
-                            color: #d70a20;
-                           
-                            a{
-                                color: #d70a20;
-                            }
-                            a:hover{
-                                color: white;
-                                text-decoration: none;
-                            }
-                        }
-
-                    }
-                }
-
-
-                
-
-                /*#############   Commandes Disponibles   #############*/
-                #commande_dispo_row{
-                    margin-top: 30px;
-                    #commande_dispo{
-                        color: #d70a20;
-                        font-size: 14px;
-                        font-weight: 500;
-                    }
-                    .col-md-4{
-                        .card{
-                            border-radius: 8px;
-                            box-shadow: 3px 3px 50px rgba(29, 29, 28, 0.158);
-                            border: none;
-                            .card-header{
-                                border-top-left-radius: 10px;
-                                border-top-right-radius: 10px;
-                                padding: 0px 15px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-                                background-color: white;
-                                border-bottom: none;
-                                .title{
-                                    color: black;
-                                    font-size: 14px;
-                                }
-                                .desc_red{
-                                    a{
-                                        color: #d70a20;
-                                        font-size: 10px;
-                                        padding-top: 20px;
-                                        text-decoration: none;
-                                    } 
-                                }
-                            }
-                            .card-body{
-                                background-color: white;
-                                padding: 0px 15px;
-                                ._body_1{
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-between;
-                                    i{
-                                        color: #d70a20;
-                                        display: inline-block;
-                                        padding-bottom: 15px;
-                                        margin-right: 10px;
-                                        }
-                                    .lieu{
-                                        font-size: 12px;
-                                    }
-                                }
-                                ._body_2{
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: space-between;
-                                        .time{
-                                            font-size: 14px;
-                                            span{
-                                                font-size: 12px;
-                                                color: #707070;
-                                            }
-                                        }
-                                    }
-                            }
-                            .card-footer{
-                                background-color: white;
-                                padding: 0px 15px;
-                                display: flex;
-                                align-items: center !important;
-                                justify-content: space-between;
-                                border-bottom-left-radius: 10px;
-                                border-bottom-right-radius: 10px;
-                                ._left, ._right{
-                                    margin-top: 10px;
-                                    font-size: 13px;
-                                    font-weight: 50;
-                                    a{
-                                        color: black;
-                                        text-decoration: none;
-                                    }
-                                }
-                                ._left{
-                                    a{
-                                        color: #d70a20;
-                                    }
-                                    
-                                }
-                            }
-                        }
-                    }
-                }
-
-
-                /*########################### Historique de commande    ######################*/
-                .year{
-                    position: relative;
-                    p{
-                        font-size: 12px;
-                        color: #43425d;
-                    }
-                    .jours{
-                        color: #d70a20;
-                    }
-                    hr{
-                        display: block;
-                        width: 70px;
-                        height: 0.5px;
-                        background: #d70a20;
-                        position: absolute;
-                        top: 8px;
-                    }
-                }
-                .div_tableau{
-                    width: 100%;
-                    //border: 1px solid #555;
-                    overflow-x: auto;
-                    
-                    .btn-primary{
-                        background: #17a2b8;
-                        border: none;
-                        font-size: 14px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-around;
-                        
-                        i{
-                            display: block;
-                        }
-                    }
-                    ._left{
-                        margin-bottom: 0px;
-                        .btn-danger{
-                        background: #343a40;
-                        border: none;
-                        font-size: 14px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-around;
-                        
-                        i{
-                            display: block;
-                            }
-                        }
-                    }
-                    
-                }
-
-
-
-                
-                /*#############   Supprimer la commande   #############*/
-
-                ._feedback{
-                    margin: 10px 5px;
-                    background: white;
-                    .title{
-                        font-size: 18px;
-                        font-weight: 100;
-                        color: #d70a20;
-                        margin-bottom: 25px;
-                    }
-                    .header{
-                        ._img{
-                            width: 70px;
-                            height: 70px;
-                            border-radius: 50%;
-                            //background: red;
-                            position: relative;
-                            overflow: hidden;
-                            img{
-                                width: 70px;
-                                height: 70px;
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                            }
-                        }
-                        .desc{
-                            i{
-                                color: #ffa200;
-                            }
-                            ._name{
-                                font-size: 25px;
-                                font-weight: bold;
-                            }
-                        }
-                    }
-                }
-
-
-
-                /*------------------------- calendrie   ----------------*/
-                .calendrier{
-                    background: white;
-                    height: 480px;
-                    border: 1px solid #000;
-                    overflow-x: auto;
-                    
-                    .header{
-                        margin-top: 45px;
-                        margin-left: 5px;
-                        .__dwm{
-                            //background: red;
-                            p{
-                                
-                                padding: 5px 5px;
-                                font-size: 10px;
-                            }
-                            ._month{
-                                color: #d70a20;
-                                border: 1px  solid rgba(148, 134, 134, 0.466);
-                                border-top-right-radius: 5px;
-                                border-bottom-right-radius: 5px;
-                            }
-                            ._weekenk{
-                                border-top: 1px  solid rgba(148, 134, 134, 0.466);
-                                border-bottom: 1px  solid rgba(148, 134, 134, 0.466);
-                            }
-                            ._day{
-                                border: 1px  solid rgba(148, 134, 134, 0.466);
-                                border-top-left-radius: 5px;
-                                border-bottom-left-radius: 5px;
-                            }
-                        }
-                        ._choise{
-                            p{
-                                 font-size: 10px;
-                                 padding: 5px 5px;
-                            }
-                        }
-                    }
-                    ._body{
-                        ._ligne1{
-                            p{
-                                
-                                font-size: 8px;
-                                padding: 5px 45px;
-                                background: #f5f6fa;
-                                border: 1px  solid rgba(148, 134, 134, 0.466);
-                            }
-                        }
-                        ._ligne2{
-                            //margin-left: 5px;
-                            .div1{
-                                width: 120px;
-                                height: 110px;
-                                background: red;
-                                border: 1px  solid rgba(148, 134, 134, 0.466);
-                            }
-                            .div{
-                                width: 125px;
-                                height: 110px;
-                                background: rgb(63, 163, 88);
-                            }
-                        }
-                    }
-                }
+/*----------------------------- center ----------------------------*/
+#dashboard_home{
+    .container{
+        #center{
+            padding-left: 15px;
+            padding-right: 15px;
+            background: #f7f8fa;
+            .gretting{
+                margin-top: 50px;
+                color: #d70a20;
+                font-size: 14px;
+                font-weight: 100 !important;
+            }
+            .name{
+                color: black;
+                font-weight: bold;
+                font-size: 25px;
+            }
+            .title{
+                color: black;
+                font-weight: bold;
+                margin-top: 30px;
+                margin-bottom: 25px;
+                font-size: 25px;
             }
 
-
-
-
-
-            /*---------------   right    -------------- */  
-
-            #_right{
-                position: relative;
-                padding-left: 0px;
-                position: sticky;
-                height: 100vh;
-                top: 1px;
-                .row{
-                    margin-top: 100px;
-                    .col-md-12{
-                        .card{
-                            border: none;
-                            flex-direction: row-reverse;
-                            position: relative;
-                            img{
-                                width: 50px;
-                                height: 50px;
-                                position: absolute;
-                                top: 35%;
-                            }
-                            .card-body{
-                                padding-bottom: 0px;
-                                padding-right: 0px;
-                                .desc_red{
-                                    color: #d70a20;
-                                    font-size: 15px;
-                                }
-                                .title{
-                                    font-size: 20px;
-                                    font-weight: bold;
-                                }
-                                .desc{
-                                    font-size: 12px;
-                                }
-                            }
-                        }
+            /*#############   Récapitulatif   #############*/
+            #recap_row{
+                #recap{
+                    color: #d70a20;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .col-md-4{
+                    
+                    .card{
+                        flex-direction: row-reverse;
+                        border-radius: 8px;
+                        box-shadow: 3px 3px 50px rgba(29, 29, 28, 0.158);
+                        height: 100px;
+                        border: none;
+                        
                         img{
-                            width: 95%;
-                            margin: auto;
+                            width: 60px;
+                            height: 60px;
                             text-align: center;
                             margin: auto;
                             display: flex;
                         }
+                        .card-body{
+                            
+                            position: relative;
+                            padding: 10px 10px 15px 10px;
+                            .desc{
+                                font-size: 15px;
+                                span{
+                                    font-size: 25px;
+                                    font-weight: bold;
+                                    color: #d70a20;
+                                    padding-left: 15px;
+                                }
+                                .principal{
+                                    font-size: 25px;
+                                }
+                                .bas{
+                                    display: block;
+                                    position: absolute;
+                                    top: 70px;
+                                    left: 25px;
+                                    font-size: 12px;
+                                    font-weight: 100;
+                                }
+                                .haut{
+                                    img{
+                                        width: 10px;
+                                        height: 10px;
+                                        position: absolute;
+                                        top: 60px;
+                                        left: 55px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
-                ._notification{
-                    margin-top: 5px;
-                    .col-md-12{
-                        .row{
-                            margin-top: 30px;
-                            .desc_1{
+        
+            }
+
+
+
+            /*#############   Commandes Disponibles   #############*/
+            #commande_dispo_row{
+                margin-top: 30px;
+                #commande_dispo{
+                    color: #d70a20;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .col-md-4{
+                    .card{
+                        border-radius: 8px;
+                        box-shadow: 3px 3px 50px rgba(29, 29, 28, 0.158);
+                        border: none;
+                        .card-header{
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            padding: 0px 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            background-color: white;
+                            border-bottom: none;
+                            .title{
+                                color: black;
+                                font-size: 14px;
+                            }
+                            .desc_red{
+                                a{
+                                    color: #d70a20;
+                                    font-size: 10px;
+                                    padding-top: 20px;
+                                    text-decoration: none;
+                                } 
+                            }
+                        }
+                        .card-body{
+                            background-color: white;
+                            padding: 0px 15px;
+                            ._body_1{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                i{
+                                    color: #d70a20;
+                                    display: inline-block;
+                                    padding-bottom: 15px;
+                                    margin-right: 10px;
+                                    }
+                                .lieu{
+                                    font-size: 12px;
+                                }
+                            }
+                            ._body_2{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    .time{
+                                        font-size: 14px;
+                                        span{
+                                            font-size: 12px;
+                                            color: #707070;
+                                        }
+                                    }
+                                }
+                        }
+                        .card-footer{
+                            background-color: white;
+                            padding: 0px 15px;
+                            display: flex;
+                            align-items: center !important;
+                            justify-content: space-between;
+                            border-bottom-left-radius: 10px;
+                            border-bottom-right-radius: 10px;
+                            ._left, ._right{
+                                margin-top: 10px;
+                                font-size: 13px;
+                                font-weight: 50;
+                                a{
+                                    color: black;
+                                    text-decoration: none;
+                                }
+                            }
+                            ._left{
+                                a{
+                                    color: #d70a20;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+/*----------------------------- right ----------------------------*/
+#dashboard_home{
+    position: relative;
+    .container{
+        #_right{
+            position: relative;
+            padding-left: 0px;
+            position: sticky;
+            height: 100vh;
+            top: 1px;
+            .row{
+                margin-top: 100px;
+                .col-md-12{
+                    .card{
+                        border: none;
+                        flex-direction: row-reverse;
+                        position: relative;
+                        img{
+                            width: 50px;
+                            height: 50px;
+                            position: absolute;
+                            top: 35%;
+                        }
+                        .card-body{
+                            padding-bottom: 0px;
+                            padding-right: 0px;
+                            .desc_red{
                                 color: #d70a20;
-                                font-size: 12px;
+                                font-size: 15px;
+                            }
+                            .title{
+                                font-size: 20px;
                                 font-weight: bold;
                             }
-                            .desc_2{
-                                color: black;
-                                font-size: 10px;
+                            .desc{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    img{
+                        width: 95%;
+                        margin: auto;
+                        text-align: center;
+                        margin: auto;
+                        display: flex;
+                    }
+                }
+            }
+            ._notification{
+                margin-top: 5px;
+                .col-md-12{
+                    .row{
+                        margin-top: 30px;
+                        .desc_1{
+                            color: #d70a20;
+                            font-size: 12px;
+                            font-weight: bold;
+                        }
+                        .desc_2{
+                            color: black;
+                            font-size: 10px;
+                            font-weight: 100;
+                        }
+                    }
+                    .card{
+                        display: flex;
+                        align-items: center;
+                        .desc{
+                            font-size: 10px;
+                            font-weight: bold;
+                            span{
+                                font-size: 8px;
                                 font-weight: 100;
                             }
                         }
-                        .card{
-                            display: flex;
-                            align-items: center;
-                            .desc{
-                                font-size: 10px;
-                                font-weight: bold;
-                                span{
-                                    font-size: 8px;
-                                    font-weight: 100;
-                                }
+                        ._icon{
+                            padding: 0px 5px;
+                            i{
+                                text-align: center;
+                                background: #fccacf;
+                                padding: 7px 12px;
+                                border-radius: 10px;
+                                font-size: 12px;
                             }
-                            ._icon{
-                                padding: 0px 5px;
-                                i{
-                                    text-align: center;
-                                    background: #fccacf;
-                                    padding: 7px 12px;
-                                    border-radius: 10px;
-                                    font-size: 12px;
-                                }
-                                .bi-exclamation-lg{
-                                    color: #f35162;
-                                }
-                                .bi-envelope-fill{
-                                    background: #ffe3b2;
-                                    color: #ffa101;
-                                }
+                            .bi-exclamation-lg{
+                                color: #f35162;
                             }
-                        
+                            .bi-envelope-fill{
+                                background: #ffe3b2;
+                                color: #ffa101;
+                            }
                         }
+                    
                     }
                 }
             }
-
-            /*""""""""""""""""""""""""      Mon compte      """"""""""""""""""""""*/
-            #right_mon_compte{
-                background: #f5f6f8;
-                .detail{
-                    justify-content: space-between;
-                    background: #fff;
-                    margin-top: 150px;
-                    padding: 25px 10px;
-                    .detail_1{
-                        .detail_1_a{
-                            width: 120px;
-                            height: 120px;
-                            background: #000;
-                            border-radius: 50%;
-                            position: relative;
-                            overflow: hidden;
-                            margin-right: 20px;
-                            img{
-                                width: 200px;
-                                height: 200px;
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                            }
-                        }
-                        .detail_1_b{
-                            .name{
-                                font-size: 15px;
-                                color: #000;
-                                font-weight: bold;
-                            }
-                            p{
-                                font-size: 10px;
-                                 font-weight: 50;
-                                 margin-bottom: 0.5rem;
-                                 i{
-                                     color: #d70a20;
-                                 }
-                            }
-                        }
-                    }
-                    .detail_2{
-                        p{
-                            font-size: 10px;
-                            font-weight: 50;
-                            strong{
-                                font-weight: bold;
-                            }
-                        }
-                        .number_inscription{
-                            strong{
-                                margin-left: 5px;
-                            }
-                        }
-                        .email{
-                            strong{
-                                margin-left: 70px;
-                            }
-                        }
-                        .contact{
-                            strong{
-                                margin-left: 60px;
-                            }
-                        }
-                    }
-                }
-            }
-              
         }
     }
+}
+
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*------------------------ MES COMMANDES ---------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+
+
+#dashboard_home{
+    .container{
+        #center{
+            ._form{
+                div{
+                    button{
+                        background: #d70a20;
+                        color: white;
+                        font-weight: bold;
+                        border: 1px solid #d70a20;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*---------------------- HISTORIQUE DE LIVRAISON ----------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
 
 
 
 
-/*####################### COMMANDE EN COURS && TREMINEE ####################*/
+#dashboard_home{
+    .container{
+        #center{
+            /*---------Historique de commande ----------*/
+            .year{
+                position: relative;
+                p{
+                    font-size: 12px;
+                    color: #43425d;
+                }
+                .jours{
+                    color: #d70a20;
+                }
+                hr{
+                    display: block;
+                    width: 70px;
+                    height: 0.5px;
+                    background: #d70a20;
+                    position: absolute;
+                    top: 8px;
+                }
+            }
+            .div_tableau{
+                width: 100%;
+                //border: 1px solid #555;
+                overflow-x: auto;
+                
+                .btn-primary{
+                    background: #17a2b8;
+                    border: none;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    
+                    i{
+                        display: block;
+                    }
+                }
+                ._left{
+                    margin-bottom: 0px;
+                    .btn-danger{
+                    background: #343a40;
+                    border: none;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    
+                    i{
+                        display: block;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*----------------------------- CALENDRIER ----------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+
+#dashboard_home{
+    .container{
+        #center{
+            /*------------------------- calendrie   ----------------*/
+            .calendrier{
+                background: white;
+                height: 480px;
+                border: 1px solid #000;
+                overflow-x: auto;
+                
+                .header{
+                    margin-top: 45px;
+                    margin-left: 5px;
+                    .__dwm{
+                        //background: red;
+                        p{
+                            
+                            padding: 5px 5px;
+                            font-size: 10px;
+                        }
+                        ._month{
+                            color: #d70a20;
+                            border: 1px  solid rgba(148, 134, 134, 0.466);
+                            border-top-right-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                        }
+                        ._weekenk{
+                            border-top: 1px  solid rgba(148, 134, 134, 0.466);
+                            border-bottom: 1px  solid rgba(148, 134, 134, 0.466);
+                        }
+                        ._day{
+                            border: 1px  solid rgba(148, 134, 134, 0.466);
+                            border-top-left-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                        }
+                    }
+                    ._choise{
+                        p{
+                             font-size: 10px;
+                             padding: 5px 5px;
+                        }
+                    }
+                }
+                ._body{
+                    ._ligne1{
+                        p{
+                            
+                            font-size: 8px;
+                            padding: 5px 45px;
+                            background: #f5f6fa;
+                            border: 1px  solid rgba(148, 134, 134, 0.466);
+                        }
+                    }
+                    ._ligne2{
+                        //margin-left: 5px;
+                        .div1{
+                            width: 120px;
+                            height: 110px;
+                            background: red;
+                            border: 1px  solid rgba(148, 134, 134, 0.466);
+                        }
+                        .div{
+                            width: 125px;
+                            height: 110px;
+                            background: rgb(63, 163, 88);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*----------------------------- MON COMPTE -----------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+
+#dashboard_home{
+    .container{
+        /*""""""  Mon compte  """"""""*/
+        #right_mon_compte{
+            background: #f5f6f8;
+            .detail{
+                justify-content: space-between;
+                background: #fff;
+                margin-top: 150px;
+                padding: 25px 10px;
+                .detail_1{
+                    .detail_1_a{
+                        width: 120px;
+                        height: 120px;
+                        background: #000;
+                        border-radius: 50%;
+                        position: relative;
+                        overflow: hidden;
+                        margin-right: 20px;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                    .detail_1_b{
+                        .name{
+                            font-size: 15px;
+                            color: #000;
+                            font-weight: bold;
+                        }
+                        p{
+                            font-size: 10px;
+                             font-weight: 50;
+                             margin-bottom: 0.5rem;
+                             i{
+                                 color: #d70a20;
+                             }
+                        }
+                    }
+                }
+                .detail_2{
+                    p{
+                        font-size: 10px;
+                        font-weight: 50;
+                        strong{
+                            font-weight: bold;
+                        }
+                    }
+                    .number_inscription{
+                        strong{
+                            margin-left: 5px;
+                        }
+                    }
+                    .email{
+                        strong{
+                            margin-left: 70px;
+                        }
+                    }
+                    .contact{
+                        strong{
+                            margin-left: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*---------------------- Detail de la commande  ----------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+
+#dashboard_home{
+    .container{
+        #center{
+            #detail_de_la_commande{
+                ._detail{
+                    .title{
+                        font-size: 20px;
+                        font-weight: 100;
+                        color: #d70a20;
+                    }
+                    ._name, .prenom, .contact, .adresse{
+                        padding-right: 20px;
+                        font-size: 13px;
+                        strong{
+                            margin-left: 20px;
+                        }
+                    }
+
+                    
+                }
+            }
+
+            #detail_de_la_commande1{
+                iframe{
+                    width: 100%;
+                }
+            }
+
+            #detail_de_la_commande_2{
+                .title{
+                        font-size: 20px;
+                        font-weight: 100;
+                        color: #d70a20;
+                    }
+            }
+
+            #detail_de_la_commande_4{
+              
+                ._btn{
+                    display: flex;
+                    justify-content: end;
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+                    .btn-outline-success{
+                        
+                        margin-right: 20px;
+                        a{
+                            color: green;
+                        }
+                        a:hover{
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                    .btn-outline-danger{
+                        color: #d70a20;
+                       
+                        a{
+                            color: #d70a20;
+                        }
+                        a:hover{
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*---------------------- Supprimer la commande  ----------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+
+#dashboard_home{
+    .container{
+        #center{
+            ._feedback{
+                margin: 10px 5px;
+                background: white;
+                .title{
+                    font-size: 18px;
+                    font-weight: 100;
+                    color: #d70a20;
+                    margin-bottom: 25px;
+                }
+                .header{
+                    ._img{
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        //background: red;
+                        position: relative;
+                        overflow: hidden;
+                        img{
+                            width: 70px;
+                            height: 70px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                    .desc{
+                        i{
+                            color: #ffa200;
+                        }
+                        ._name{
+                            font-size: 25px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*################################################################*/
+/*----------------------------------------------------------------*/
+/*-------------- COMMANDE EN COURS && TREMINEE -------------------*/
+/*----------------------------------------------------------------*/
+/*################################################################*/
+
 
 #commande_en_cours{
     
     .container{
-        /*--------------------  left -----------------*/
-
-        /*--------------------  Parcour -----------------*/
+        /*--------------------  left ----------------*/
         ._left{
             
             .icon_{
