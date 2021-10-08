@@ -1,14 +1,50 @@
+/*################################################################*/
+/*--                                                            --*/
+/*---             Pour les ecrans au maximun de 320px           ---*/
+/*--                                                            --*/
+/*################################################################*/
+@media screen and (max-width: 320px) {
+  /*----------------------------------------------------------------*/
+  /*----------------- MENU DE NAVIGATION POUR ANDROID -------------*/
+  /*----------------------------------------------------------------*/
+  main #mobile_responsible .entete .title a {
+    font-size: 20px;
+  }
+
+  /*----------------------------------------------------------------*/
+  /*------------------------ COMMANDE EN COURS ---------------------*/
+  /*----------------------------------------------------------------*/
+  #commande_en_cours .container .row ._left .icon_ .return_home {
+    font-size: 12px;
+  }
+  #commande_en_cours .container .row ._left .icon_ .bi {
+    font-size: 20px;
+  }
+  #commande_en_cours .container .row ._left .desc {
+    font-size: 12px;
+  }
+}
+/*################################################################*/
+/*--                                                            --*/
+/*---             Pour les ecrans au maximun de 500px           ---*/
+/*--                                                            --*/
+/*################################################################*/
 @media screen and (max-width: 500px) {
-  main #mobile_responsible {
-    display: block;
+  main {
+    /*----------------------------------------------------------------*/
+    /*------------------------ COMMANDE EN COURS ---------------------*/
+    /*----------------------------------------------------------------*/
   }
-  main #dashboard_home .container .row #_left {
+  main #commande_en_cours .container .row {
+    position: relative;
+  }
+  main #commande_en_cours .container .row ._left .row {
     display: none;
-    background: red;
-    margin-left: 25px;
   }
-  main #dashboard_home .container .row #_left nav .nav {
-    background: green;
+  main #dashboard_home .container {
+    /*----------------------------------------------------------------*/
+    /*----------------------------- MON COMPTE -----------------------*/
+    /*----------------------------------------------------------------*/
   }
   main #dashboard_home .container .row #center .gretting, main #dashboard_home .container .row #center .name, main #dashboard_home .container .row #center .title {
     margin-left: 25px;
@@ -19,43 +55,223 @@
   main #dashboard_home .container .row #center #recap_row .col-md-4 #card {
     background: red;
   }
-  main #dashboard_home .container .row #_right {
-    display: none;
+  main #dashboard_home .container #right_mon_compte {
+    /*""""""  Mon compte  """"""""*/
+    /*-------------------Encouragement--------------*/
   }
-  main #dashboard_home .container .row #right_mon_compte .detail {
+  main #dashboard_home .container #right_mon_compte .detail {
+    /*"""""""""""""""  Description du client  """"""""""""""""*/
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  main #dashboard_home .container .row #right_mon_compte .detail .detail_1 {
+  main #dashboard_home .container #right_mon_compte .detail .detail_1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  main #dashboard_home .container .row #right_mon_compte .detail .detail_1 .detail_1_a {
+  main #dashboard_home .container #right_mon_compte .detail .detail_1 .detail_1_a {
     margin-right: 0px;
   }
-  main #dashboard_home .container .row #right_mon_compte .detail .detail_1 .detail_1_b .name {
+  main #dashboard_home .container #right_mon_compte .detail .detail_1 .detail_1_b .name {
     margin-top: 25px;
   }
-  main #dashboard_home .container .row #right_mon_compte .detail .detail_1 .detail_1_b .desc {
+  main #dashboard_home .container #right_mon_compte .detail .detail_1 .detail_1_b .desc {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  main #dashboard_home .container .row #right_mon_compte .detail .detail_2 p strong {
+  main #dashboard_home .container #right_mon_compte .detail .detail_2 p strong {
     font-weight: bold;
   }
-  main #dashboard_home .container .row #right_mon_compte .detail .detail_2 .number_inscription, main #dashboard_home .container .row #right_mon_compte .detail .detail_2 .email, main #dashboard_home .container .row #right_mon_compte .detail .detail_2 .contact {
+  main #dashboard_home .container #right_mon_compte .detail .detail_2 .number_inscription, main #dashboard_home .container #right_mon_compte .detail .detail_2 .email, main #dashboard_home .container #right_mon_compte .detail .detail_2 .contact {
     margin-bottom: 0.5rem;
   }
-  main #dashboard_home .container .row #right_mon_compte .detail .detail_2 .number_inscription strong {
+  main #dashboard_home .container #right_mon_compte .detail .detail_2 .number_inscription strong {
     margin-left: 5px;
   }
-  main #dashboard_home .container .row #right_mon_compte .detail .detail_2 .email strong {
+  main #dashboard_home .container #right_mon_compte .detail .detail_2 .email strong {
     margin-left: 70px;
   }
-  main #dashboard_home .container .row #right_mon_compte .detail .detail_2 .contact strong {
+  main #dashboard_home .container #right_mon_compte .detail .detail_2 .contact strong {
     margin-left: 60px;
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation {
+    flex-direction: column;
+    /*--------------------Badge----------------*/
+    /*--------------------note client----------------*/
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation .badge .title, main #dashboard_home .container #right_mon_compte .congratilation .note_client .title {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation .badge .title h3, main #dashboard_home .container #right_mon_compte .congratilation .note_client .title h3 {
+    font-size: 25px;
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation .badge {
+    margin-bottom: 30px;
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges {
+    display: flex;
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .quantity p {
+    font-size: 16px;
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification {
+    flex-direction: column;
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification ._one, main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification ._two, main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification ._three {
+    margin-right: 0px;
+    margin: 15px 35px;
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification ._one ._imag_badge img, main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification ._two ._imag_badge img, main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification ._three ._imag_badge img {
+    width: 120px;
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification ._one p, main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification ._two p, main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification ._three p {
+    font-size: 15px;
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation .note_client .kpi {
+    flex-direction: column;
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation .note_client .kpi .summary_skill {
+    margin-bottom: 10px;
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation .note_client .kpi .performance .nbre p {
+    margin-top: 20px;
+    /* top: 0px; */
+    top: 18px;
+    right: 0px;
+    color: #d70a20;
+    font-size: 125px;
+    font-weight: bold;
+  }
+  main #dashboard_home .container #right_mon_compte .congratilation .note_client .kpi .performance .nbre span {
+    right: 75px;
+    margin-top: 50px;
+  }
+}
+/*################################################################*/
+/*--                                                            --*/
+/*---            Pour les ecrans au maximun de 768px           ---*/
+/*--                                                            --*/
+/*################################################################*/
+@media screen and (max-width: 768px) {
+  /*----------------------------------------------------------------*/
+  /*---------------------- COMMANDE TERMINER ---------------------*/
+  /*----------------------------------------------------------------*/
+  #commande_en_cours .container {
+    /*--------------------  right -----------------*/
+  }
+  #commande_en_cours .container ._width {
+    width: 80%;
+    left: 10%;
+  }
+  #commande_en_cours .container ._width .finish {
+    padding-bottom: 0px;
+  }
+  #commande_en_cours .container ._width .finish .entete P {
+    font-size: 15px;
+  }
+  #commande_en_cours .container ._width .finish ._footer {
+    display: flex;
+    align-items: center;
+  }
+  #commande_en_cours .container ._width .finish ._footer p a {
+    font-size: 12px;
+  }
+  #commande_en_cours .container ._width .finish ._footer ._button_left {
+    margin-bottom: 0px;
+  }
+  #commande_en_cours .container ._width .finish ._footer ._button_right {
+    margin-bottom: 3rem;
+  }
+
+  /*----------------------------------------------------------------*/
+  /*----------------------------- MON COMPTE -----------------------*/
+  /*----------------------------------------------------------------*/
+  main #commande_en_cours .container .row {
+    /*------------ left -------------*/
+    /*------------ right -------------*/
+  }
+  main #commande_en_cours .container .row ._left .commande_en_cours ._img {
+    display: none;
+  }
+  main #commande_en_cours .container .row ._left .commande_en_cours .desc {
+    align-items: center;
+    padding: 10px 15px;
+  }
+  main #commande_en_cours .container .row ._left .commande_en_cours .desc p {
+    text-align: center;
+  }
+  main #commande_en_cours .container .row ._left ._warning_full .warning_1 .__icon i {
+    margin-right: 12px;
+  }
+  main #commande_en_cours .container .row ._left .icon_ {
+    margin-top: 50px;
+  }
+  main #commande_en_cours .container .row ._right {
+    margin-top: 50px;
+  }
+
+  main #mobile_responsible {
+    display: block;
+    margin-bottom: 50px;
+  }
+  main #dashboard_home .container {
+    max-width: 100vw;
+  }
+  main #dashboard_home .container .row {
+    margin-right: 0px;
+    margin-left: 0px;
+    flex-direction: column;
+    max-width: 100%;
+    /*################################################################*/
+    /*----------------------------------------------------------------*/
+    /*----------------------------- MON COMPTE -----------------------*/
+    /*----------------------------------------------------------------*/
+    /*################################################################*/
+  }
+  main #dashboard_home .container .row #_left {
+    display: none;
+  }
+  main #dashboard_home .container .row #center {
+    max-width: 100%;
+  }
+  main #dashboard_home .container .row #center .gretting {
+    margin-top: 110px;
+  }
+  main #dashboard_home .container .row #_right {
+    display: none;
+    max-width: 100%;
+  }
+  main #dashboard_home .container .row #right_mon_compte {
+    padding-right: 0px;
+    max-width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  main #dashboard_home .container .row #right_mon_compte .congratilation {
+    flex-direction: column;
+  }
+  main #dashboard_home .container .row #right_mon_compte .congratilation .badge, main #dashboard_home .container .row #right_mon_compte .congratilation .note_client {
+    width: 100%;
+  }
+}
+/*################################################################*/
+/*--                                                            --*/
+/*---             Pour les ecrans au maximun de 1024px           ---*/
+/*--                                                            --*/
+/*################################################################*/
+@media screen and (max-width: 1024px) {
+  /*----------------------------------------------------------------*/
+  /*---------------------- COMMANDE TERMINER ---------------------*/
+  /*----------------------------------------------------------------*/
+  #commande_en_cours .container {
+    /*--------------------  right -----------------*/
+  }
+  #commande_en_cours .container ._width {
+    width: 80%;
+    left: 10%;
   }
 }

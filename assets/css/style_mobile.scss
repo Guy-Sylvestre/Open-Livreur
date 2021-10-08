@@ -1,23 +1,81 @@
-@media screen and (max-width: 500px) {
+/*################################################################*/
+/*--                                                            --*/
+/*---             Pour les ecrans au maximun de 320px           ---*/
+/*--                                                            --*/
+/*################################################################*/
+
+@media screen and (max-width: 320px) {
+    /*----------------------------------------------------------------*/
+    /*----------------- MENU DE NAVIGATION POUR ANDROID -------------*/
+    /*----------------------------------------------------------------*/
     main{
         #mobile_responsible{
-                display: block;
-               
+            .entete{
+                .title{
+                    a{
+                        font-size: 20px;
+                    }
+                }
             }
+        }
+    }
+
+
+    /*----------------------------------------------------------------*/
+    /*------------------------ COMMANDE EN COURS ---------------------*/
+    /*----------------------------------------------------------------*/
+    #commande_en_cours{
+        .container{
+            .row{
+                ._left{
+                    .icon_{
+                        .return_home{
+                            font-size: 12px;
+                        }
+                        .bi{
+                            font-size: 20px;
+                        }
+                    }
+                    .desc{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*################################################################*/
+/*--                                                            --*/
+/*---             Pour les ecrans au maximun de 500px           ---*/
+/*--                                                            --*/
+/*################################################################*/
+@media screen and (max-width: 500px) {
+    main{
+
+        /*----------------------------------------------------------------*/
+        /*------------------------ COMMANDE EN COURS ---------------------*/
+        /*----------------------------------------------------------------*/
+        #commande_en_cours{
+            .container{
+                .row{
+                    position: relative;
+                    ._left{
+                        
+                        .row{
+                            display: none;
+                        }
+                       
+                    }
+                }
+            }
+        }
+
         #dashboard_home{
         .container{
             .row{
-                #_left{
-                    display: none;
-                    background: red;
-                    margin-left: 25px;
-                    nav{
-                        .nav{
-                            background: green;
-                            //display: none;
-                        }
-                    }
-                }
                 #center{
                     .gretting, .name, .title{
                         margin-left: 25px;
@@ -34,70 +92,319 @@
                         
                     }
                 }
-                #_right{
-                    display: none;
-                }
+            }
+
+                
+                /*----------------------------------------------------------------*/
+                /*----------------------------- MON COMPTE -----------------------*/
+                /*----------------------------------------------------------------*/
+          
                 #right_mon_compte{
-                .detail{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    .detail_1{
-                        
+                
+                    /*""""""  Mon compte  """"""""*/
+                    .detail{
+                        /*"""""""""""""""  Description du client  """"""""""""""""*/
                         display: flex;
                         flex-direction: column;
-                        align-items: center;
-                        text-align: center;
-                        
-                        .detail_1_a{
-                            margin-right: 0px;
-                        }
-                        .detail_1_b{
-                            .name{
-                                margin-top: 25px;
-                            }
-                            .desc{
-                                margin-top: 20px;
-                                margin-bottom: 20px;
-                            }
-                        }
-                    }
-                    .detail_2{
-                        p{
+                        justify-content: center;
+                        .detail_1{
                             
-                            strong{
-                                font-weight: bold;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            text-align: center;
+                            
+                            .detail_1_a{
+                                margin-right: 0px;
                             }
-                        }
-                        .number_inscription, .email, .contact{
-                            margin-bottom: .5rem;
-                        }
-                        .number_inscription{
-                            strong{
-                                margin-left: 5px;
-                            }
-                        }
-                        .email{
-                            strong{
-                                margin-left: 70px;
-                            }
-                        }
-                        .contact{
-                            strong{
-                                margin-left: 60px;
+                            .detail_1_b{
+                                .name{
+                                    margin-top: 25px;
+                                }
+                                .desc{
+                                    margin-top: 20px;
+                                    margin-bottom: 20px;
                                 }
                             }
                         }
-                    }
-                }      
+                        .detail_2{
+                            p{
+                                strong{
+                                    font-weight: bold;
+                                }
+                            }
+                            .number_inscription, .email, .contact{
+                                margin-bottom: .5rem;
+                            }
+                            .number_inscription{
+                                strong{
+                                    margin-left: 5px;
+                                }
+                            }
+                            .email{
+                                strong{
+                                    margin-left: 70px;
+                                }
+                            }
+                            .contact{
+                                strong{
+                                    margin-left: 60px;
+                                    }
+                                }
+                            }
+                        }
 
-              }
-          }
-      }
+
+                    /*-------------------Encouragement--------------*/
+                    .congratilation{
+                        flex-direction: column;
+                        /*--------------------Badge----------------*/
+                        .badge, .note_client{
+                            .title{
+                            margin-bottom: 10px;
+                            margin-top: 10px;
+                            margin-left: 25px;
+                            h3{
+                                font-size: 25px;
+                                }
+                            }
+                        }
+                        .badge{
+                            margin-bottom: 30px;
+                            .nbre_badges{
+                                .quantity{
+                                    p{
+                                        font-size: 16px;
+                                    }
+                                }
+                                .qualification{
+                                    flex-direction: column;
+                                    ._one, ._two, ._three{
+                                        margin-right: 0px;
+                                        margin: 15px 35px;
+                                        ._imag_badge{
+                                            img{
+                                                width: 120px;
+                                            }
+                                        }
+                                        p{
+                                            font-size: 15px;
+                                        }
+                                    }
+                                }
+                                display: flex;
+                                
+                            }
+                        }
+
+                         /*--------------------note client----------------*/
+                        .note_client{
+                            .kpi{
+                                flex-direction: column;
+                                .summary_skill{
+                                    margin-bottom: 10px;
+                                }
+                                .performance{
+                                    .nbre{
+                                        p{
+                                            margin-top: 20px;
+                                            /* top: 0px; */
+                                            top: 18px;
+                                            right: 0px;
+                                            color: #d70a20;
+                                            font-size: 125px;
+                                            font-weight: bold;
+                                        }
+                                        span{
+                                            right: 75px; 
+                                            margin-top: 50px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        }
+                    }      
+
+                }
+            }
+        }
     }
-    
-}
+
+
+
+
+/*################################################################*/
+/*--                                                            --*/
+/*---            Pour les ecrans au maximun de 768px           ---*/
+/*--                                                            --*/
+/*################################################################*/
 
 @media screen and (max-width: 768px) {
 
+    /*----------------------------------------------------------------*/
+    /*---------------------- COMMANDE TERMINER ---------------------*/
+    /*----------------------------------------------------------------*/
+    #commande_en_cours{
+        .container{
+            /*--------------------  right -----------------*/
+            ._width{
+                .finish{
+                    padding-bottom: 0px;
+                    .entete{
+                        P{
+                            font-size: 15px;
+                        }
+                        
+                    }
+                    ._footer{
+                        display: flex;
+                        align-items: center;
+                        p{
+                            a{
+                                font-size: 12px;
+                            }
+                        }
+                        ._button_left{
+                            margin-bottom: 0px;
+                        }
+                        ._button_right{
+                            margin-bottom: 3rem;
+                        }
+                    }
+                }
+                width: 80%;
+                left: 10%;
+            }
+        }
+    }
+    /*----------------------------------------------------------------*/
+    /*----------------------------- MON COMPTE -----------------------*/
+    /*----------------------------------------------------------------*/
+    main{
+        #commande_en_cours{
+            .container{
+                .row{
+                    /*------------ left -------------*/
+                    ._left{
+                        .commande_en_cours{
+                            ._img{
+                                display: none;
+                            }
+                            .desc{
+                                align-items: center;
+                                padding: 10px 15px;
+                                p{
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        ._warning_full{
+                            .warning_1{
+                                .__icon{
+                                    i{
+                                        margin-right: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        .icon_{
+                            margin-top: 50px;
+                        }
+                    }
+
+                    /*------------ right -------------*/
+                    ._right{
+                        margin-top: 50px;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    
+    main{
+        #mobile_responsible{
+            display: block;
+            margin-bottom: 50px;
+            }
+        #dashboard_home{
+            .container{
+                    max-width: 100vw;
+                .row{
+                    margin-right: 0px;
+                    margin-left: 0px;
+                    flex-direction: column;
+                    max-width: 100%;
+                    #_left{
+                    display: none;
+                    }
+                    #center{
+                        max-width: 100%;
+                        .gretting{
+                            margin-top: 110px;
+                        }
+                        #recap_row{
+                            #recap{
+                                
+                            }
+                            .col-md-4{
+                                #card{
+                                
+                                }
+                            }
+                            
+                        }
+                    }
+                    #_right{
+                        display: none;
+                        max-width: 100%;
+                    }
+
+                    /*################################################################*/
+                    /*----------------------------------------------------------------*/
+                    /*----------------------------- MON COMPTE -----------------------*/
+                    /*----------------------------------------------------------------*/
+                    /*################################################################*/
+                    #right_mon_compte{
+                            padding-right: 0px;
+                            max-width: 100%;
+                            padding-left: 25px;
+                            padding-right: 25px;
+                        .congratilation{
+                            flex-direction: column;
+                            .badge, .note_client{
+                                width: 100%;
+                                }
+                            }
+                        }      
+
+                    }
+                }
+            }
+    }
+}
+    
+
+
+/*################################################################*/
+/*--                                                            --*/
+/*---             Pour les ecrans au maximun de 1024px           ---*/
+/*--                                                            --*/
+/*################################################################*/
+@media screen and (max-width: 1024px){
+
+    /*----------------------------------------------------------------*/
+    /*---------------------- COMMANDE TERMINER ---------------------*/
+    /*----------------------------------------------------------------*/
+    #commande_en_cours{
+        .container{
+            /*--------------------  right -----------------*/
+            ._width{
+                width: 80%;
+                left: 10%;
+            }
+        }
+    }
 }
