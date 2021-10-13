@@ -47,12 +47,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*################################################################*/
 /*--                                                            --*/
 /*---             Pour les ecrans au maximun de 500px           ---*/
 /*--                                                            --*/
 /*################################################################*/
 @media screen and (max-width: 500px) {
+    
     main{
 
         /*----------------------------------------------------------------*/
@@ -81,16 +96,37 @@
                         margin-left: 25px;
                     }
                     #recap_row{
+
                         #recap{
                             margin-left: 15px;
                         }
-                        .col-md-4{
-                            #card{
-                                background: red;
+                      
+                        /*----------------------------------------------------------------*/
+                        /*----------------------------- DASHBOARD -----------------------*/
+                        /*----------------------------------------------------------------*/
+
+                        ._card_recapitulatif{
+                            display: flex;
+                            flex-direction: column;
+                            .col-md-4{
+                                margin-bottom: 15px;
                             }
                         }
+                        #commande_dispo_row{
+                            .commande_disponible{
+                                background: red !important;
+                            }
+                        }
+
                         
                     }
+
+                    #commande_dispo_row{
+                        .commande_disponible{
+                            flex-direction: column;
+                        }
+                    }
+                    
                 }
             }
 
@@ -100,7 +136,15 @@
                 /*----------------------------------------------------------------*/
           
                 #right_mon_compte{
-                
+                    
+                    .name{
+                        font-size: 22px !important;
+                    }
+                    .header_du_compte{
+                        h1{
+                            font-size: 20px;
+                        }
+                    }
                     /*""""""  Mon compte  """"""""*/
                     .detail{
                         /*"""""""""""""""  Description du client  """"""""""""""""*/
@@ -223,13 +267,89 @@
                                 }
                             }
                         }
-                        }
-                    }      
+                    }
 
+
+                    .mes_disponibilites{
+                        ._body{
+                            //background: red;
+                            flex-direction: column;
+
+                            .left{
+                                width: 100% !important;
+                                margin-right: 0px;
+                                margin-bottom: 10px;
+                                padding: 20px 20px;
+                                height: 280px;
+                                ._row1, ._row2, ._row3, ._row4{
+                                    p{
+                                        font-size: 18px;
+                                        strong{
+                                            color: black;
+                                            font-weight: 100;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                                ._button{
+                                    p{
+                                        a{
+                                           
+                                            padding: 5px 10px;
+                                            font-size: 13px;
+                                            border-radius: 5px;
+                                            
+                                        }
+                                    }
+                                }
+                                
+                            }
+                            ._calendar{
+                                width: 100% !important;
+                                margin-left: 0px;
+                                padding: 30px 20px;
+                            }
+                        }
+                    }
+                }      
+
+            }
+        }
+    }
+
+    /*----------------------------------------------------------------*/
+    /*---------------------------- MES COMMANDES ---------------------*/
+    /*----------------------------------------------------------------*/
+
+    #dashboard_home{
+        .container{
+            #center{
+                ._form{
+                   input[placeholder]{
+                       font-size: 15px !important;
+                   }
+                    div{
+                        button{
+                            font-size: 12px !important;
+                        }
+                    }
                 }
             }
         }
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -278,6 +398,28 @@
             }
         }
     }
+    /*----------------------------------------------------------------*/
+    /*---------------------------- MES COMMANDES ---------------------*/
+    /*----------------------------------------------------------------*/
+
+    #dashboard_home{
+        .container{
+            #center{
+                ._form{
+                   input[placeholder]{
+                       font-size: 15px;
+                   }
+                    div{
+                        button{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
     /*----------------------------------------------------------------*/
     /*----------------------------- MON COMPTE -----------------------*/
     /*----------------------------------------------------------------*/
@@ -345,18 +487,19 @@
                         .gretting{
                             margin-top: 110px;
                         }
+                       
+                        /*----------------------------------------------------------------*/
+                        /*----------------------        DASHBOARD       ---------------------*/
+                        /*----------------------------------------------------------------*/
                         #recap_row{
-                            #recap{
-                                
-                            }
-                            .col-md-4{
-                                #card{
-                                
+                            ._card_recapitulatif{
+                                .card{
+                                    height: 100px !important;
                                 }
                             }
-                            
                         }
                     }
+
                     #_right{
                         display: none;
                         max-width: 100%;
@@ -368,10 +511,14 @@
                     /*----------------------------------------------------------------*/
                     /*################################################################*/
                     #right_mon_compte{
-                            padding-right: 0px;
-                            max-width: 100%;
-                            padding-left: 25px;
-                            padding-right: 25px;
+                        padding-right: 0px;
+                        max-width: 100%;
+                        padding-left: 25px;
+                        padding-right: 25px;
+
+                        .gretting{
+                            margin-top: 120px;
+                        }
                         .congratilation{
                             flex-direction: column;
                             .badge, .note_client{
@@ -384,8 +531,22 @@
                 }
             }
     }
+
 }
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*################################################################*/
@@ -404,6 +565,44 @@
             ._width{
                 width: 80%;
                 left: 10%;
+            }
+        }
+    }
+
+
+    /*----------------------------------------------------------------*/
+    /*----------------------        DASHBOARD       ------------------*/
+    /*----------------------------------------------------------------*/
+    #center{
+        #recap_row{
+            ._card_recapitulatif{
+                .card{
+                    height: 125px !important;
+                }
+            }
+        }
+        
+    }
+
+    /*----------------------------------------------------------------*/
+    /*----------------------        DASHBOARD       ------------------*/
+    /*----------------------------------------------------------------*/
+    #dashboard_home{
+        .container{
+            .row{
+                #right_mon_compte{
+                    .note_client{
+                        .kpi{
+                            .performance{
+                                .nbre{
+                                    span{
+                                        right: 40px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

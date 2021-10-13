@@ -491,7 +491,18 @@ main #mobile_responsible .display {
   left: 55px;
 }
 #dashboard_home .container #center #commande_dispo_row {
-  margin-top: 30px;
+  margin-top: 50px;
+}
+#dashboard_home .container #center #commande_dispo_row .entete_des_commandes {
+  margin-bottom: 0px !important;
+}
+#dashboard_home .container #center #commande_dispo_row .voir_plus a {
+  margin-right: 10px;
+  color: #d70a20;
+  font-size: 14px;
+}
+#dashboard_home .container #center #commande_dispo_row .voir_plus a i {
+  font-size: 10px;
 }
 #dashboard_home .container #center #commande_dispo_row #commande_dispo {
   color: #d70a20;
@@ -673,6 +684,9 @@ main #mobile_responsible .display {
 /*------------------------ MES COMMANDES ---------------------*/
 /*----------------------------------------------------------------*/
 /*################################################################*/
+#dashboard_home .container #center ._form {
+  margin-top: 40px !important;
+}
 #dashboard_home .container #center ._form div button {
   background: #d70a20;
   color: white;
@@ -746,54 +760,107 @@ main #mobile_responsible .display {
   /*------------------------- calendrie   ----------------*/
 }
 #dashboard_home .container #center .calendrier {
+  border: 1px solid rgba(192, 186, 186, 0.486);
+  width: 750px;
+  height: 780px;
+  overflow-x: scroll;
   background: white;
-  height: 480px;
-  border: 1px solid #000;
-  overflow-x: auto;
+  position: relative;
 }
 #dashboard_home .container #center .calendrier .header {
-  margin-top: 45px;
-  margin-left: 5px;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-bottom: 25px;
 }
-#dashboard_home .container #center .calendrier .header .__dwm p {
-  padding: 5px 5px;
-  font-size: 10px;
+#dashboard_home .container #center .calendrier .header .days_weekend_months .days p, #dashboard_home .container #center .calendrier .header .days_weekend_months .week-end p, #dashboard_home .container #center .calendrier .header .days_weekend_months .months p {
+  margin-bottom: 0px;
+  padding: 2px 10px;
+  font-size: 12px;
+  cursor: pointer;
 }
-#dashboard_home .container #center .calendrier .header .__dwm ._month {
-  color: #d70a20;
-  border: 1px solid rgba(148, 134, 134, 0.466);
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+#dashboard_home .container #center .calendrier .header .days_weekend_months .days p, #dashboard_home .container #center .calendrier .header .days_weekend_months .week-end p, #dashboard_home .container #center .calendrier .header .days_weekend_months .months p {
+  border-top: 0.5px solid rgba(192, 186, 186, 0.486);
+  border-left: 0.5px solid rgba(192, 186, 186, 0.486);
+  border-bottom: 0.5px solid rgba(192, 186, 186, 0.486);
 }
-#dashboard_home .container #center .calendrier .header .__dwm ._weekenk {
-  border-top: 1px solid rgba(148, 134, 134, 0.466);
-  border-bottom: 1px solid rgba(148, 134, 134, 0.466);
-}
-#dashboard_home .container #center .calendrier .header .__dwm ._day {
-  border: 1px solid rgba(148, 134, 134, 0.466);
+#dashboard_home .container #center .calendrier .header .days_weekend_months .days p {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-#dashboard_home .container #center .calendrier .header ._choise p {
-  font-size: 10px;
-  padding: 5px 5px;
+#dashboard_home .container #center .calendrier .header .days_weekend_months .months p {
+  border-right: 0.5px solid rgba(192, 186, 186, 0.486);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #d70a20;
 }
-#dashboard_home .container #center .calendrier ._body ._ligne1 p {
-  font-size: 8px;
-  padding: 5px 45px;
+#dashboard_home .container #center .calendrier .header .weekend p {
+  margin-left: 95px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  color: #aa9f9f;
+}
+#dashboard_home .container #center .calendrier .body {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#dashboard_home .container #center .calendrier .body ._row1 p {
+  height: 30px;
+  width: 122px;
   background: #f5f6fa;
-  border: 1px solid rgba(148, 134, 134, 0.466);
+  text-align: center;
+  padding-top: 8px;
+  font-size: 10px;
+  margin-bottom: 0px;
 }
-#dashboard_home .container #center .calendrier ._body ._ligne2 .div1 {
-  width: 120px;
-  height: 110px;
-  background: red;
-  border: 1px solid rgba(148, 134, 134, 0.466);
+#dashboard_home .container #center .calendrier .body ._row2 .square1 {
+  height: 122px;
+  width: 122px;
+  background: #f5f6fa;
+  position: relative;
 }
-#dashboard_home .container #center .calendrier ._body ._ligne2 .div {
-  width: 125px;
-  height: 110px;
-  background: #3fa358;
+#dashboard_home .container #center .calendrier .body ._row2 .square1 .number {
+  position: absolute;
+  font-size: 12px;
+  right: 6px;
+  top: 6px;
+}
+#dashboard_home .container #center .calendrier .body ._row2 .square2 {
+  height: 122px;
+  width: 122px;
+  background: white;
+  position: relative;
+}
+#dashboard_home .container #center .calendrier .body ._row2 .square2 .number {
+  position: absolute;
+  font-size: 12px;
+  right: 6px;
+  top: 6px;
+}
+#dashboard_home .container #center .calendrier .body ._row3 .square1 {
+  height: 122px;
+  width: 122px;
+  background: white;
+  position: relative;
+}
+#dashboard_home .container #center .calendrier .body ._row3 .square1 .number {
+  position: absolute;
+  font-size: 12px;
+  right: 6px;
+  top: 6px;
+}
+#dashboard_home .container #center .calendrier .body ._row3 .square2 {
+  height: 122px;
+  width: 122px;
+  background: #f5f6fa;
+  position: relative;
+}
+#dashboard_home .container #center .calendrier .body ._row3 .square2 .number {
+  position: absolute;
+  font-size: 12px;
+  right: 6px;
+  top: 6px;
 }
 
 /*################################################################*/
@@ -806,13 +873,133 @@ main #mobile_responsible .display {
 }
 #dashboard_home .container #right_mon_compte {
   background: #f5f6f8;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #f7f8fa;
   /*""""""""""""""""""""""""""""""""  Description du client  """"""""""""""""""""""""*/
   /*-------------------Encouragement--------------*/
+  /*""""""""""""""""""""""    Mes disponibilités    """""""""""""""""""""""""""*/
+}
+#dashboard_home .container #right_mon_compte .gretting {
+  margin-top: 50px;
+  color: #d70a20;
+  font-size: 14px;
+  font-weight: 100 !important;
+}
+#dashboard_home .container #right_mon_compte .name {
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+#dashboard_home .container #right_mon_compte .title {
+  color: black;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte {
+  margin-top: 25px;
+  /*""""""  Modal d'edition  """"""""*/
+}
+#dashboard_home .container #right_mon_compte .header_du_compte h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte ._right {
+  margin-right: 10px;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte ._right a {
+  background: #d70a20;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-header {
+  border-bottom: none;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-header .modal-title {
+  font-size: 15px;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._corps_fumulaire ._row1, #dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._corps_fumulaire ._row2 {
+  justify-content: space-between;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._corps_fumulaire ._row1 .mb-3, #dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._corps_fumulaire ._row2 .mb-3 {
+  width: 48%;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._corps_fumulaire ._row1 .mb-3 label, #dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._corps_fumulaire ._row2 .mb-3 label {
+  font-size: 13px;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._corps_fumulaire ._row1 .mb-3 input, #dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._corps_fumulaire ._row2 .mb-3 input {
+  height: 30px;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._corps_fumulaire ._row1 .mb-3 input[placeholder], #dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._corps_fumulaire ._row2 .mb-3 input[placeholder] {
+  font-size: 12px;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._img {
+  position: relative;
+  margin-bottom: 150px;
+  margin-top: 50px;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._img .photo {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  background: black;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._img .photo img {
+  width: 150px;
+  height: 150px;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._img ._icon a {
+  position: absolute;
+  left: 270px;
+  top: 30px;
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._img ._icon input {
+  width: 30px !important;
+  visibility: visible;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-body ._img ._icon input[type] {
+  font-size: 8px;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  position: absolute;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-footer {
+  border-top: none;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-footer .btn {
+  background: #d70a20;
+  font-size: 12px;
+  padding: 2px 15px;
+  border-color: #d70a20;
+  font-weight: bold;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-footer ._left, #dashboard_home .container #right_mon_compte .header_du_compte .modal-footer ._right {
+  background: white;
+  color: #d70a20;
+}
+#dashboard_home .container #right_mon_compte .header_du_compte .modal-footer ._left:hover, #dashboard_home .container #right_mon_compte .header_du_compte .modal-footer ._right:hover {
+  background: #d70a20;
+  color: white;
 }
 #dashboard_home .container #right_mon_compte .detail {
   justify-content: space-between;
   background: #fff;
-  margin-top: 150px;
+  margin-top: 20px;
   padding: 25px 10px;
 }
 #dashboard_home .container #right_mon_compte .detail .detail_1 .detail_1_a {
@@ -948,13 +1135,95 @@ main #mobile_responsible .display {
   display: block;
   position: absolute;
   top: 18px;
-  right: 60px;
+  right: 40px;
   color: #d70a20;
   font-size: 25px;
   font-weight: bold;
 }
 #dashboard_home .container #right_mon_compte .congratilation .note_client .kpi .performance .caher {
   visibility: hidden;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites {
+  margin-bottom: 50px;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites .header {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites .header .title {
+  color: #d70a20;
+  font-size: 18px;
+  font-weight: bold;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body {
+  /*""""""""""""""""  left  """""""""""""""""*/
+  /*""""""""""""""""  right  """""""""""""""""*/
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left {
+  padding: 10px 20px;
+  background: white;
+  height: 360px;
+  padding-top: 90px;
+  margin-right: 2.5px;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row1 p, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row2 p, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row3 p, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row4 p {
+  color: #d70a20;
+  font-size: 14px;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row1 p strong, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row2 p strong, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row3 p strong, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row4 p strong {
+  color: black;
+  font-weight: 100;
+  font-size: 14px;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._button p {
+  position: relative;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._button p a {
+  font-weight: bold;
+  color: white;
+  background: #d70a20;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 5px;
+  position: absolute;
+  text-decoration: none;
+  z-index: 2;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._button p a:hover {
+  border: 2px solid #d70a20;
+  background: white;
+  color: #d70a20;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._button p input {
+  position: absolute;
+  opacity: 100%;
+  width: 200px;
+  left: 40px;
+  display: none;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar {
+  padding: 45px 45px;
+  background: white;
+  height: 360px;
+  margin-left: 2.5px;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._year ._left i, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._year ._right i {
+  cursor: pointer;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._year ._year_month p {
+  font-size: 20px;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_ ._one, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_ ._tow, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_ ._three, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_ ._four {
+  color: #9e9ea0;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._one, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._tow, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._three, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._four, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._five, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._six, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._seven, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._one, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._tow, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._three, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._four, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._five, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._six, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._seven, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._one, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._tow, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._three, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._four, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._five, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._six, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._seven, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._one, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._tow, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._three, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._four, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._five, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._six, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._seven {
+  padding: 5px;
+  border-radius: 50%;
+  transition: 0.25s ease-in-out;
+}
+#dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._one:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._tow:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._three:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._four:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._five:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._six:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_2 ._seven:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._one:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._tow:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._three:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._four:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._five:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._six:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_3 ._seven:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._one:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._tow:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._three:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._four:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._five:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._six:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_4 ._seven:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._one:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._tow:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._three:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._four:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._five:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._six:hover, #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar ._number_5 ._seven:hover {
+  background: #ac929441;
+  cursor: pointer;
 }
 
 /*################################################################*/

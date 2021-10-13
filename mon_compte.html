@@ -142,6 +142,76 @@
 <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Mon compte   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
                         
                         <div class="col-md-10 col-sm-12" id="right_mon_compte">
+                            <h3 class="gretting">Welcome Back !</h3>
+                            <h1 class="name">Stéphane</h1>
+
+
+                            
+
+                             <!--header du compte-->
+                            <div class="header_du_compte d-flex align-items-center justify-content-between">
+                                <h1>Mon compte</h1>
+
+                                <!-- Button trigger modal -->
+                                <p type="button" class=" _right" data-toggle="modal" data-target="#exampleModal">
+                                    <a href="#">Editer mon profil</a>
+                                </p>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Modifier mon profil</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="_img">
+                                                    <div class="photo">
+                                                        <img src="./assets/images/mon_profile-removebg-preview.png" alt=""/>
+                                                    </div>
+                                                    <div class="_icon">
+                                                        <a href="#">
+                                                            <i class="bi bi-camera-fill"></i>
+                                                            <!--<input type="file" id="profile_pic" name="profile_pic" accept=".jpg, .jpeg, .png"/>-->
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="_corps_fumulaire">
+                                                    <form class="d-flex flex-column">
+                                                        <div class="_row1 d-flex">
+                                                            <div class="mb-3">
+                                                                <label for="name" class="form-label">Nom</label>
+                                                                <input type="text" class="form-control" placeholder="OULOULOU" id="name" aria-describedby="textHelp">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="lastName" class="form-label">Prénom</label>
+                                                                <input type="text" class="form-control" placeholder="Stéphane" id="lastName" aria-describedby="textHelp">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <div class="_row2 d-flex">
+                                                            <div class="mb-3">
+                                                                <label for="email" class="form-label">Email</label>
+                                                                <input type="text" placeholder="xyza@groupecerco.com" class="form-control" id="name" aria-describedby="emailHelp">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="lastName" class="form-label">Contact</label>
+                                                                <input type="number" placeholder="+2296633114586" class="form-control" id="lastName" aria-describedby="numberHelp">
+                                                            </div>
+                                                        </div>    
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <a href="#" class="btn _left btn-primary">Sauvegarder </a>
+                                                <a href="./mon_compte.html" class="btn _right btn-primary">Annuler</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+
+
                             <!--Description du client-->
                             <div class="detail d-flex align-items-center">
                                 <div class="detail_1 d-flex align-items-center">
@@ -255,6 +325,110 @@
                                 </div>
 
                             </div>
+
+                            <!--Mes disponibilités-->
+                            <div class="mes_disponibilites d-flex flex-column">
+                                <div class="header">
+                                    <h1 class="title">Mes disponibilités</h1>
+                                </div>
+                                <div class="_body d-flex justify-content-between align-items-center">
+                                    
+                                    <!--left-->
+                                    <div class="left d-flex flex-column w-50">
+                                        <div class="_row1">
+                                            <p>Lun <strong>Toute journée</strong></p>
+                                        </div>
+                                        <div class="_row2">
+                                            <p>Lun <strong>13:00 - 18:00</strong></p>
+                                        </div>
+                                        <div class="_row3">
+                                            <p>Lun <strong>8:00 - 13:00</strong></p>
+                                        </div>
+                                        <div class="_row4">
+                                            <p>Lun <strong>Toute journée</strong></p>
+                                        </div>
+                                        <div class="_button">
+                                            <p>
+                                                <a href="#" type="datetime-local">Ajouter une nouvelle disponibilité</a>
+                                                <input type="datetime-local"/>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!--right-->
+                                    <div class="_calendar d-flex flex-column w-50">
+                                        <!--Année et mois-->
+                                        <div class="_year d-flex justify-content-between">
+                                            <p class="_left">
+                                                <i class="bi bi-chevron-left"></i>
+                                            </p>
+                                            <div class="_year_month">
+                                                <p><span>Octobre</span> 2021</p>
+                                            </div>
+                                            <p class="_right">
+                                                <i class="bi bi-chevron-right"></i>
+                                            </p>
+                                        </div>
+                                        <!--jours-->
+                                        <div class="_days d-flex justify-content-between">
+                                            <p class="_one">L</p>
+                                            <p class="_tow">M</p>
+                                            <p class="_three">M</p>
+                                            <p class="_four">J</p>
+                                            <p class="_five">V</p>
+                                            <p class="_six">S</p>
+                                            <p class="_seven">D</p>
+                                        </div>
+                                        <div class="_number_ d-flex justify-content-between">
+                                            <p class="_one">27</p>
+                                            <p class="_tow">28</p>
+                                            <p class="_three">29</p>
+                                            <p class="_four">30</p>
+                                            <p class="_five">1</p>
+                                            <p class="_six">2</p>
+                                            <p class="_seven">3</p>
+                                        </div>
+                                        <div class="_number_2 d-flex justify-content-between">
+                                            <p class="_one">4</p>
+                                            <p class="_tow">5</p>
+                                            <p class="_three">6</p>
+                                            <p class="_four">7</p>
+                                            <p class="_five">8</p>
+                                            <p class="_six">9</p>
+                                            <p class="_seven">10</p>
+                                        </div>
+                                        <div class="_number_3 d-flex justify-content-between">
+                                            <p class="_one">11</p>
+                                            <p class="_tow">12</p>
+                                            <p class="_three">13</p>
+                                            <p class="_four">14</p>
+                                            <p class="_five">15</p>
+                                            <p class="_six">16</p>
+                                            <p class="_seven">17</p>
+                                        </div>
+                                        <div class="_number_4 d-flex justify-content-between">
+                                            <p class="_one">18</p>
+                                            <p class="_tow">19</p>
+                                            <p class="_three">20</p>
+                                            <p class="_four">21</p>
+                                            <p class="_five">22</p>
+                                            <p class="_six">23</p>
+                                            <p class="_seven">24</p>
+                                        </div>
+                                        <div class="_number_5 d-flex justify-content-between">
+                                            <p class="_one">25</p>
+                                            <p class="_tow">26</p>
+                                            <p class="_three">27</p>
+                                            <p class="_four">28</p>
+                                            <p class="_five">29</p>
+                                            <p class="_six">30</p>
+                                            <p class="_seven">31</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
 
                         

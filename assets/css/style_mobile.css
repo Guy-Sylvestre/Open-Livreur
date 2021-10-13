@@ -49,15 +49,36 @@
   main #dashboard_home .container .row #center .gretting, main #dashboard_home .container .row #center .name, main #dashboard_home .container .row #center .title {
     margin-left: 25px;
   }
+  main #dashboard_home .container .row #center #recap_row {
+    /*----------------------------------------------------------------*/
+    /*----------------------------- DASHBOARD -----------------------*/
+    /*----------------------------------------------------------------*/
+  }
   main #dashboard_home .container .row #center #recap_row #recap {
     margin-left: 15px;
   }
-  main #dashboard_home .container .row #center #recap_row .col-md-4 #card {
-    background: red;
+  main #dashboard_home .container .row #center #recap_row ._card_recapitulatif {
+    display: flex;
+    flex-direction: column;
+  }
+  main #dashboard_home .container .row #center #recap_row ._card_recapitulatif .col-md-4 {
+    margin-bottom: 15px;
+  }
+  main #dashboard_home .container .row #center #recap_row #commande_dispo_row .commande_disponible {
+    background: red !important;
+  }
+  main #dashboard_home .container .row #center #commande_dispo_row .commande_disponible {
+    flex-direction: column;
   }
   main #dashboard_home .container #right_mon_compte {
     /*""""""  Mon compte  """"""""*/
     /*-------------------Encouragement--------------*/
+  }
+  main #dashboard_home .container #right_mon_compte .name {
+    font-size: 22px !important;
+  }
+  main #dashboard_home .container #right_mon_compte .header_du_compte h1 {
+    font-size: 20px;
   }
   main #dashboard_home .container #right_mon_compte .detail {
     /*"""""""""""""""  Description du client  """"""""""""""""*/
@@ -150,6 +171,44 @@
     right: 75px;
     margin-top: 50px;
   }
+  main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body {
+    flex-direction: column;
+  }
+  main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left {
+    width: 100% !important;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    padding: 20px 20px;
+    height: 280px;
+  }
+  main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row1 p, main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row2 p, main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row3 p, main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row4 p {
+    font-size: 18px;
+  }
+  main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row1 p strong, main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row2 p strong, main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row3 p strong, main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._row4 p strong {
+    color: black;
+    font-weight: 100;
+    font-size: 14px;
+  }
+  main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left ._button p a {
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 5px;
+  }
+  main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body ._calendar {
+    width: 100% !important;
+    margin-left: 0px;
+    padding: 30px 20px;
+  }
+
+  /*----------------------------------------------------------------*/
+  /*---------------------------- MES COMMANDES ---------------------*/
+  /*----------------------------------------------------------------*/
+  #dashboard_home .container #center ._form input[placeholder] {
+    font-size: 15px !important;
+  }
+  #dashboard_home .container #center ._form div button {
+    font-size: 12px !important;
+  }
 }
 /*################################################################*/
 /*--                                                            --*/
@@ -185,6 +244,16 @@
   }
   #commande_en_cours .container ._width .finish ._footer ._button_right {
     margin-bottom: 3rem;
+  }
+
+  /*----------------------------------------------------------------*/
+  /*---------------------------- MES COMMANDES ---------------------*/
+  /*----------------------------------------------------------------*/
+  #dashboard_home .container #center ._form input[placeholder] {
+    font-size: 15px;
+  }
+  #dashboard_home .container #center ._form div button {
+    font-size: 12px;
   }
 
   /*----------------------------------------------------------------*/
@@ -237,9 +306,15 @@
   }
   main #dashboard_home .container .row #center {
     max-width: 100%;
+    /*----------------------------------------------------------------*/
+    /*----------------------        DASHBOARD       ---------------------*/
+    /*----------------------------------------------------------------*/
   }
   main #dashboard_home .container .row #center .gretting {
     margin-top: 110px;
+  }
+  main #dashboard_home .container .row #center #recap_row ._card_recapitulatif .card {
+    height: 100px !important;
   }
   main #dashboard_home .container .row #_right {
     display: none;
@@ -250,6 +325,9 @@
     max-width: 100%;
     padding-left: 25px;
     padding-right: 25px;
+  }
+  main #dashboard_home .container .row #right_mon_compte .gretting {
+    margin-top: 120px;
   }
   main #dashboard_home .container .row #right_mon_compte .congratilation {
     flex-direction: column;
@@ -273,5 +351,19 @@
   #commande_en_cours .container ._width {
     width: 80%;
     left: 10%;
+  }
+
+  /*----------------------------------------------------------------*/
+  /*----------------------        DASHBOARD       ------------------*/
+  /*----------------------------------------------------------------*/
+  #center #recap_row ._card_recapitulatif .card {
+    height: 125px !important;
+  }
+
+  /*----------------------------------------------------------------*/
+  /*----------------------        DASHBOARD       ------------------*/
+  /*----------------------------------------------------------------*/
+  #dashboard_home .container .row #right_mon_compte .note_client .kpi .performance .nbre span {
+    right: 40px !important;
   }
 }/*# sourceMappingURL=style_mobile.css.map */

@@ -548,7 +548,20 @@ main{
 
             /*#############   Commandes Disponibles   #############*/
             #commande_dispo_row{
-                margin-top: 30px;
+                margin-top: 50px;
+                .entete_des_commandes{
+                    margin-bottom: 0px !important;
+                }
+                .voir_plus{
+                    a{
+                        margin-right: 10px;
+                        color: #d70a20;
+                        font-size: 14px;
+                        i{
+                            font-size: 10px;
+                        }   
+                    }
+                }
                 #commande_dispo{
                     color: #d70a20;
                     font-size: 14px;
@@ -756,6 +769,7 @@ main{
     .container{
         #center{
             ._form{
+                margin-top: 40px !important;
                 div{
                     button{
                         background: #d70a20;
@@ -856,66 +870,126 @@ main{
         #center{
             /*------------------------- calendrie   ----------------*/
             .calendrier{
+                border: 1px solid rgba(192, 186, 186, 0.486);
+                width: 750px;
+                height: 780px;
+                overflow-x: scroll;
                 background: white;
-                height: 480px;
-                border: 1px solid #000;
-                overflow-x: auto;
-                
+                position: relative;
                 .header{
-                    margin-top: 45px;
-                    margin-left: 5px;
-                    .__dwm{
-                        //background: red;
-                        p{
+                    position: relative;
+                    margin-top: 50px;
+                    margin-left: 10px;
+                    margin-bottom: 25px;
+                    .days_weekend_months{
+                        .days, .week-end, .months {
                             
-                            padding: 5px 5px;
-                            font-size: 10px;
+                            p{
+                                margin-bottom: 0px;
+                                padding: 2px 10px;
+                                font-size: 12px;
+                                cursor: pointer;
+                            }
                         }
-                        ._month{
-                            color: #d70a20;
-                            border: 1px  solid rgba(148, 134, 134, 0.466);
-                            border-top-right-radius: 5px;
-                            border-bottom-right-radius: 5px;
+                        .days, .week-end, .months{
+                            p{
+                                border-top: 0.5px solid rgba(192, 186, 186, 0.486);
+                                border-left: 0.5px solid rgba(192, 186, 186, 0.486);
+                                border-bottom: 0.5px solid rgba(192, 186, 186, 0.486);
+                            }
                         }
-                        ._weekenk{
-                            border-top: 1px  solid rgba(148, 134, 134, 0.466);
-                            border-bottom: 1px  solid rgba(148, 134, 134, 0.466);
+                        .days{
+                            p{
+                                border-top-left-radius: 5px;
+                                border-bottom-left-radius: 5px;
+                            }
+                            
                         }
-                        ._day{
-                            border: 1px  solid rgba(148, 134, 134, 0.466);
-                            border-top-left-radius: 5px;
-                            border-bottom-left-radius: 5px;
+                        .months{
+                            p{
+                                border-right: 0.5px solid rgba(192, 186, 186, 0.486);
+                                border-top-right-radius: 5px;
+                                border-bottom-right-radius: 5px;
+                                color: #d70a20;
+                            }
                         }
                     }
-                    ._choise{
+                    .weekend{
                         p{
-                             font-size: 10px;
-                             padding: 5px 5px;
+                            margin-left: 95px;
+                            margin-bottom: 0px;
+                            font-size: 15px;
+                            color: rgb(170, 159, 159);
                         }
                     }
                 }
-                ._body{
-                    ._ligne1{
+                .body{
+                    position: relative;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    ._row1{
+                        
                         p{
-                            
-                            font-size: 8px;
-                            padding: 5px 45px;
+                            height: 30px;
+                            width: 122px;
+                            //border: 1px solid black;
                             background: #f5f6fa;
-                            border: 1px  solid rgba(148, 134, 134, 0.466);
+                            text-align: center;
+                            padding-top: 8px;
+                            font-size: 10px;
+                            margin-bottom: 0px;
                         }
                     }
-                    ._ligne2{
-                        //margin-left: 5px;
-                        .div1{
-                            width: 120px;
-                            height: 110px;
-                            background: red;
-                            border: 1px  solid rgba(148, 134, 134, 0.466);
+                    ._row2{
+                        .square1{
+                            height: 122px;
+                            width: 122px;
+                            background: #f5f6fa;
+                            position: relative;
+                            .number{
+                                position: absolute;
+                                font-size: 12px;
+                                right: 6px;
+                                top: 6px;
+                            }
                         }
-                        .div{
-                            width: 125px;
-                            height: 110px;
-                            background: rgb(63, 163, 88);
+                        .square2{
+                            height: 122px;
+                            width: 122px;
+                            background: rgb(255, 255, 255);
+                             position: relative;
+                            .number{
+                                position: absolute;
+                                font-size: 12px;
+                                right: 6px;
+                                top: 6px;
+                            }
+                        }
+                    }
+                    ._row3{
+                        .square1{
+                            height: 122px;
+                            width: 122px;
+                            background: white;
+                            position: relative;
+                            .number{
+                                position: absolute;
+                                font-size: 12px;
+                                right: 6px;
+                                top: 6px;
+                            }
+                        }
+                        .square2{
+                            height: 122px;
+                            width: 122px;
+                            background: #f5f6fa;
+                             position: relative;
+                            .number{
+                                position: absolute;
+                                font-size: 12px;
+                                right: 6px;
+                                top: 6px;
+                            }
                         }
                     }
                 }
@@ -938,11 +1012,149 @@ main{
         /*""""""  Mon compte  """"""""*/
         #right_mon_compte{
             background: #f5f6f8;
+            padding-left: 15px;
+            padding-right: 15px;
+            background: #f7f8fa;
+            .gretting{
+                margin-top: 50px;
+                color: #d70a20;
+                font-size: 14px;
+                font-weight: 100 !important;
+            }
+            .name{
+                color: black;
+                font-weight: bold;
+                font-size: 25px;
+            }
+            .title{
+                color: black;
+                font-weight: bold;
+                margin-top: 30px;
+                margin-bottom: 25px;
+                font-size: 25px;
+            }
+
+
+            .header_du_compte{
+                margin-top: 25px;
+
+                /*""""""  Modal d'edition  """"""""*/
+                h1{
+                    font-weight: bold;
+                    font-size: 30px;
+                }
+                ._right{
+                    margin-right: 10px;
+                    a{
+                        background: #d70a20;
+                        padding: 5px 10px;
+                        color: white;
+                        border-radius: 4px;
+                        font-weight: bold;
+                        font-size: 12px;
+                        text-decoration: none;
+                    }
+                }
+    
+                .modal-header{
+                    border-bottom: none;
+                    .modal-title{
+                        font-size: 15px;
+                    }
+                }
+                .modal-body{
+                    ._corps_fumulaire{
+                        ._row1, ._row2{
+                            justify-content: space-between;
+                            .mb-3{
+                                width: 48%;
+                                label{
+                                    font-size: 13px;
+                                }
+                                input{
+                                    height: 30px;
+                                }
+                                input[placeholder]{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+
+
+                    ._img{
+                        position: relative;
+                        margin-bottom: 150px;
+                        margin-top: 50px;
+                        .photo{
+                            position: absolute;
+                            width: 130px;
+                            height: 130px;
+                            background: rgb(0, 0, 0);
+                            border-radius: 50%;
+                            overflow: hidden;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            img{
+                                width: 150px;
+                                height: 150px;
+                                
+                               
+                            }
+                        }
+                        ._icon{
+                            a{
+                                position: absolute;
+                                left: 270px;
+                                top: 30px;
+                                color: rgb(0, 0, 0);
+                                font-size: 25px;
+                                text-decoration: none;
+                            }
+                            input{
+                                width: 30px !important;
+                                visibility: visible;
+                            }
+                            input[type]{
+                                font-size: 8px;
+                                width: 50px;
+                                height: 50px;
+                                top: 10px;
+                                position: absolute;
+                            }
+                        }
+                    }
+                }
+                .modal-footer{
+                    border-top: none;
+                    .btn {
+                        background: #d70a20;
+                        font-size: 12px;
+                        padding: 2px 15px;
+                        border-color:#d70a20;
+                        font-weight: bold;
+                    }
+                    ._left, ._right{
+                        background: white;
+                        color: #d70a20;
+                    }
+                    ._left:hover, ._right:hover{
+                        background: #d70a20;
+                        color: white;
+                    }
+                }
+              
+            }
+
+
+
+
             /*""""""""""""""""""""""""""""""""  Description du client  """"""""""""""""""""""""*/
             .detail{
                 justify-content: space-between;
                 background: #fff;
-                margin-top: 150px;
+                margin-top: 20px;
                 padding: 25px 10px;
                 .detail_1{
                     .detail_1_a{
@@ -1116,7 +1328,7 @@ main{
                                     position: absolute;
                                     
                                     top: 18px;
-                                    right: 60px;
+                                    right: 40px;
                                     color: #d70a20;
                                     font-size: 25px;
                                     font-weight: bold;
@@ -1129,6 +1341,109 @@ main{
                     }
                 }
             }
+
+            /*""""""""""""""""""""""    Mes disponibilités    """""""""""""""""""""""""""*/
+            .mes_disponibilites{
+                margin-bottom: 50px;
+                .header{
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+                    .title{
+                        color: #d70a20;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+                ._body{
+                    /*""""""""""""""""  left  """""""""""""""""*/
+                    .left{
+                        padding: 10px 20px;
+                        background: rgb(255, 255, 255);
+                        height: 360px;
+                        padding-top: 90px;
+                        margin-right: 2.5px;
+                        
+                        ._row1, ._row2, ._row3, ._row4{
+                            p{
+                                color: #d70a20;
+                                font-size: 14px;
+                                strong{
+                                    color: black;
+                                    font-weight: 100;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        ._button{
+                            p{
+                                position: relative;
+                                a{
+                                    font-weight: bold;
+                                    color: white;
+                                    background: #d70a20;
+                                    padding: 5px 10px;
+                                    font-size: 13px;
+                                    border-radius: 5px;
+                                    position: absolute;
+                                    text-decoration: none;
+                                    z-index: 2;
+                                }
+                                a:hover{
+                                    border: 2px solid #d70a20;
+                                    background: white;
+                                    color: #d70a20;
+                                }
+                                input{
+                                    position: absolute;
+                                    opacity: 100%;
+                                    width: 200px;
+                                    left: 40px;
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+
+
+                    /*""""""""""""""""  right  """""""""""""""""*/
+                    ._calendar{
+                        padding: 45px 45px;
+                        background: rgb(255, 255, 255);
+                        height: 360px;
+                        margin-left: 2.5px;
+                        ._year{
+                            ._left, ._right{
+                                i{
+                                    cursor: pointer;
+                                }
+                            }
+                            ._year_month{
+                                p{
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                        ._number_{
+                            ._one, ._tow, ._three, ._four{
+                                color: #9e9ea0;
+                            }
+                        }
+                        ._number_2, ._number_3, ._number_4, ._number_5{
+                            ._one, ._tow, ._three, ._four, ._five, ._six, ._seven{
+                                padding: 5px;
+                                border-radius: 50%;
+                                transition: .25s ease-in-out;
+                            }
+                            ._one:hover, ._tow:hover, ._three:hover, ._four:hover, ._five:hover, ._six:hover, ._seven:hover{
+                                background: #ac929441;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
         }
     }
 }
