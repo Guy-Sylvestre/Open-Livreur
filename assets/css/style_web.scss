@@ -869,13 +869,14 @@ main{
     .container{
         #center{
             /*------------------------- calendrie   ----------------*/
-            .calendrier{
+            ._row{
                 border: 1px solid rgba(192, 186, 186, 0.486);
                 width: 750px;
                 height: 780px;
                 overflow-x: scroll;
                 background: white;
                 position: relative;
+                
                 .header{
                     position: relative;
                     margin-top: 50px;
@@ -941,6 +942,39 @@ main{
                         }
                     }
                     ._row2{
+                        span{
+                                position: absolute;
+                                background: green;
+                                top: 25px;
+                                left: 4px;
+                                font-size: 12px;
+                                width: 115px;
+                                border-radius: 3px;
+                                text-align: center;
+                                color: white;
+                            }
+                        .span{
+                            position: absolute;
+                            background: #d70a20;
+                            top: 25px;
+                            left: 4px;
+                            font-size: 12px;
+                            width: 115px;
+                            border-radius: 3px;
+                            text-align: center;
+                            color: white;
+                        }
+                        .span1{
+                            position: absolute;
+                            background: #d70a20;
+                            top: 4px;
+                            left: 4px;
+                            font-size: 12px;
+                            width: 115px;
+                            border-radius: 3px;
+                            text-align: center;
+                            color: white;
+                        }
                         .square1{
                             height: 122px;
                             width: 122px;
@@ -952,6 +986,7 @@ main{
                                 right: 6px;
                                 top: 6px;
                             }
+                            
                         }
                         .square2{
                             height: 122px;

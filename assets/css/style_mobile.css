@@ -10,7 +10,6 @@
   main #mobile_responsible .entete .title a {
     font-size: 20px;
   }
-
   /*----------------------------------------------------------------*/
   /*------------------------ COMMANDE EN COURS ---------------------*/
   /*----------------------------------------------------------------*/
@@ -24,6 +23,7 @@
     font-size: 12px;
   }
 }
+
 /*################################################################*/
 /*--                                                            --*/
 /*---             Pour les ecrans au maximun de 500px           ---*/
@@ -58,8 +58,13 @@
     margin-left: 15px;
   }
   main #dashboard_home .container .row #center #recap_row ._card_recapitulatif {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main #dashboard_home .container .row #center #recap_row ._card_recapitulatif .col-md-4 {
     margin-bottom: 15px;
@@ -68,7 +73,10 @@
     background: red !important;
   }
   main #dashboard_home .container .row #center #commande_dispo_row .commande_disponible {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main #dashboard_home .container #right_mon_compte {
     /*""""""  Mon compte  """"""""*/
@@ -82,14 +90,28 @@
   }
   main #dashboard_home .container #right_mon_compte .detail {
     /*"""""""""""""""  Description du client  """"""""""""""""*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main #dashboard_home .container #right_mon_compte .detail .detail_1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
   main #dashboard_home .container #right_mon_compte .detail .detail_1 .detail_1_a {
@@ -106,7 +128,7 @@
     font-weight: bold;
   }
   main #dashboard_home .container #right_mon_compte .detail .detail_2 .number_inscription, main #dashboard_home .container #right_mon_compte .detail .detail_2 .email, main #dashboard_home .container #right_mon_compte .detail .detail_2 .contact {
-    margin-bottom: 0.5rem;
+    margin-bottom: .5rem;
   }
   main #dashboard_home .container #right_mon_compte .detail .detail_2 .number_inscription strong {
     margin-left: 5px;
@@ -118,7 +140,10 @@
     margin-left: 60px;
   }
   main #dashboard_home .container #right_mon_compte .congratilation {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /*--------------------Badge----------------*/
     /*--------------------note client----------------*/
   }
@@ -134,13 +159,18 @@
     margin-bottom: 30px;
   }
   main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .quantity p {
     font-size: 16px;
   }
   main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification ._one, main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification ._two, main #dashboard_home .container #right_mon_compte .congratilation .badge .nbre_badges .qualification ._three {
     margin-right: 0px;
@@ -153,7 +183,10 @@
     font-size: 15px;
   }
   main #dashboard_home .container #right_mon_compte .congratilation .note_client .kpi {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main #dashboard_home .container #right_mon_compte .congratilation .note_client .kpi .summary_skill {
     margin-bottom: 10px;
@@ -172,7 +205,10 @@
     margin-top: 50px;
   }
   main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main #dashboard_home .container #right_mon_compte .mes_disponibilites ._body .left {
     width: 100% !important;
@@ -199,7 +235,6 @@
     margin-left: 0px;
     padding: 30px 20px;
   }
-
   /*----------------------------------------------------------------*/
   /*---------------------------- MES COMMANDES ---------------------*/
   /*----------------------------------------------------------------*/
@@ -210,6 +245,7 @@
     font-size: 12px !important;
   }
 }
+
 /*################################################################*/
 /*--                                                            --*/
 /*---            Pour les ecrans au maximun de 768px           ---*/
@@ -233,8 +269,12 @@
     font-size: 15px;
   }
   #commande_en_cours .container ._width .finish ._footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #commande_en_cours .container ._width .finish ._footer p a {
     font-size: 12px;
@@ -245,7 +285,6 @@
   #commande_en_cours .container ._width .finish ._footer ._button_right {
     margin-bottom: 3rem;
   }
-
   /*----------------------------------------------------------------*/
   /*---------------------------- MES COMMANDES ---------------------*/
   /*----------------------------------------------------------------*/
@@ -255,7 +294,6 @@
   #dashboard_home .container #center ._form div button {
     font-size: 12px;
   }
-
   /*----------------------------------------------------------------*/
   /*----------------------------- MON COMPTE -----------------------*/
   /*----------------------------------------------------------------*/
@@ -267,7 +305,9 @@
     display: none;
   }
   main #commande_en_cours .container .row ._left .commande_en_cours .desc {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px 15px;
   }
   main #commande_en_cours .container .row ._left .commande_en_cours .desc p {
@@ -282,7 +322,6 @@
   main #commande_en_cours .container .row ._right {
     margin-top: 50px;
   }
-
   main #mobile_responsible {
     display: block;
     margin-bottom: 50px;
@@ -293,7 +332,10 @@
   main #dashboard_home .container .row {
     margin-right: 0px;
     margin-left: 0px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     max-width: 100%;
     /*################################################################*/
     /*----------------------------------------------------------------*/
@@ -330,12 +372,16 @@
     margin-top: 120px;
   }
   main #dashboard_home .container .row #right_mon_compte .congratilation {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main #dashboard_home .container .row #right_mon_compte .congratilation .badge, main #dashboard_home .container .row #right_mon_compte .congratilation .note_client {
     width: 100%;
   }
 }
+
 /*################################################################*/
 /*--                                                            --*/
 /*---             Pour les ecrans au maximun de 1024px           ---*/
@@ -352,18 +398,17 @@
     width: 80%;
     left: 10%;
   }
-
   /*----------------------------------------------------------------*/
   /*----------------------        DASHBOARD       ------------------*/
   /*----------------------------------------------------------------*/
   #center #recap_row ._card_recapitulatif .card {
     height: 125px !important;
   }
-
   /*----------------------------------------------------------------*/
   /*----------------------        DASHBOARD       ------------------*/
   /*----------------------------------------------------------------*/
   #dashboard_home .container .row #right_mon_compte .note_client .kpi .performance .nbre span {
     right: 40px !important;
   }
-}/*# sourceMappingURL=style_mobile.css.map */
+}
+/*# sourceMappingURL=style_mobile.css.map */
